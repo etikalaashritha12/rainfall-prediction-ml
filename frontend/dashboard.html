@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard Overview · Rainfall Prediction Using ML</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/responsive.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body data-page="dashboard" data-title="Dashboard Overview">
+<main class="content" id="page-content">
+<div class="page-head"><h1>Rainfall Prediction Using ML</h1>
+<p class="muted">Weather intelligence dashboard · all values below are loaded from the Flask backend.</p></div>
+<div id="dash-error"></div>
+<div class="grid g4" id="kpis">
+  <div class="card kpi"><div class="icon">📍</div><div class="label">Supported locations</div><div class="value" id="kpi-locations">…</div><div class="sub">from training data</div></div>
+  <div class="card kpi"><div class="icon">🎯</div><div class="label">Selected location</div><div class="value" id="kpi-selected">—</div><div class="sub"><a href="prediction.html">change</a></div></div>
+  <div class="card kpi"><div class="icon">🌧️</div><div class="label">Latest prediction</div><div class="value" id="kpi-latest">—</div><div class="sub" id="kpi-latest-sub">No prediction made yet</div></div>
+  <div class="card kpi"><div class="icon">🛡️</div><div class="label">Rainfall risk status</div><div class="value" id="kpi-risk">—</div><div class="sub" id="kpi-risk-sub">&nbsp;</div></div>
+</div>
+<div class="grid g2" style="margin-top:1.1rem">
+  <div class="card"><h2>Model performance summary</h2><div id="perf-summary"><div class="loader"></div></div></div>
+  <div class="card"><h2>Risk distribution (historical data)</h2><div class="chart-box"><canvas id="chart-risk"></canvas></div></div>
+</div>
+<div class="grid g2" style="margin-top:1.1rem">
+  <div class="card"><h2>Rainfall trend <span class="muted" id="trend-label"></span></h2><div class="chart-box"><canvas id="chart-trend"></canvas></div><div id="trend-empty"></div></div>
+  <div class="card"><h2>Location-wise rainfall comparison</h2><div class="chart-box"><canvas id="chart-locations"></canvas></div></div>
+</div>
+</main>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+</body></html>

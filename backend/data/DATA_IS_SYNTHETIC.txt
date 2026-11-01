@@ -1,0 +1,3 @@
+dataset.csv in this folder is a SYNTHETIC DEMO dataset generated so the project runs out of the box.
+It is NOT real weather data. Replace dataset.csv with your real dataset (see README_DATASET.md),
+delete this file, and run `python -m models.train` again. Results on demo data must not be reported as real.

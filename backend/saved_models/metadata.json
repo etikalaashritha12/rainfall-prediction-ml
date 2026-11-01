@@ -1,0 +1,7398 @@
+{
+  "trained_at": "2026-11-01T20:59:24",
+  "target": "rainfall",
+  "uses_date": true,
+  "columns": {
+    "date": "date",
+    "location": "location",
+    "state": "state",
+    "latitude": "latitude",
+    "longitude": "longitude",
+    "target": "rainfall"
+  },
+  "features": [
+    {
+      "name": "temperature",
+      "min": 15.8,
+      "max": 41.2,
+      "mean": 28.99851064442716
+    },
+    {
+      "name": "humidity",
+      "min": 15.0,
+      "max": 100.0,
+      "mean": 61.842428131416845
+    },
+    {
+      "name": "pressure",
+      "min": 994.8,
+      "max": 1021.5,
+      "mean": 1008.2293780428081
+    },
+    {
+      "name": "wind_speed",
+      "min": 0.0,
+      "max": 28.6,
+      "mean": 10.69192233457206
+    },
+    {
+      "name": "cloud_cover",
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 49.434670887519964
+    }
+  ],
+  "feature_order": [
+    "temperature",
+    "humidity",
+    "pressure",
+    "wind_speed",
+    "cloud_cover",
+    "month",
+    "month_sin",
+    "month_cos",
+    "location"
+  ],
+  "spec": {
+    "weather": [
+      "temperature",
+      "humidity",
+      "pressure",
+      "wind_speed",
+      "cloud_cover"
+    ],
+    "derived": [
+      "month",
+      "month_sin",
+      "month_cos"
+    ],
+    "geo": [],
+    "categorical": [
+      "location"
+    ]
+  },
+  "locations": [
+    {
+      "name": "Bengaluru",
+      "state": "Karnataka",
+      "latitude": 12.972,
+      "longitude": 77.595,
+      "records": 2922,
+      "avg_weather": {
+        "temperature": 28.99226231783484,
+        "humidity": 58.982614647501705,
+        "pressure": 1008.2255031228315,
+        "wind_speed": 10.675329632199862,
+        "cloud_cover": 47.215708418891175
+      }
+    },
+    {
+      "name": "Chennai",
+      "state": "Tamil Nadu",
+      "latitude": 13.083,
+      "longitude": 80.271,
+      "records": 2922,
+      "avg_weather": {
+        "temperature": 29.01011391094235,
+        "humidity": 62.29216290212184,
+        "pressure": 1008.1784259578876,
+        "wind_speed": 10.768208491542975,
+        "cloud_cover": 49.572861054072554
+      }
+    },
+    {
+      "name": "Delhi",
+      "state": "Delhi",
+      "latitude": 28.614,
+      "longitude": 77.209,
+      "records": 2922,
+      "avg_weather": {
+        "temperature": 28.97988247493951,
+        "humidity": 55.173716632443536,
+        "pressure": 1008.161078465261,
+        "wind_speed": 10.744590390597995,
+        "cloud_cover": 43.860711841204655
+      }
+    },
+    {
+      "name": "Guwahati",
+      "state": "Assam",
+      "latitude": 26.145,
+      "longitude": 91.736,
+      "records": 2922,
+      "avg_weather": {
+        "temperature": 29.039440993788816,
+        "humidity": 66.5484257357974,
+        "pressure": 1008.1746376811594,
+        "wind_speed": 10.6799861973775,
+        "cloud_cover": 53.00116358658454
+      }
+    },
+    {
+      "name": "Hyderabad",
+      "state": "Telangana",
+      "latitude": 17.385,
+      "longitude": 78.487,
+      "records": 2922,
+      "avg_weather": {
+        "temperature": 28.966264645072364,
+        "humidity": 60.57683093771389,
+        "pressure": 1008.2743625086148,
+        "wind_speed": 10.718745692625776,
+        "cloud_cover": 48.5348733744011
+      }
+    },
+    {
+      "name": "Jaipur",
+      "state": "Rajasthan",
+      "latitude": 26.912,
+      "longitude": 75.787,
+      "records": 2922,
+      "avg_weather": {
+        "temperature": 29.0,
+        "humidity": 54.186516084873375,
+        "pressure": 1008.2479916897507,
+        "wind_speed": 10.632583102493076,
+        "cloud_cover": 43.36865160848733
+      }
+    },
+    {
+      "name": "Kochi",
+      "state": "Kerala",
+      "latitude": 9.931,
+      "longitude": 76.267,
+      "records": 2922,
+      "avg_weather": {
+        "temperature": 29.084620713543472,
+        "humidity": 66.83220396988365,
+        "pressure": 1008.2713197090404,
+        "wind_speed": 10.749220644267405,
+        "cloud_cover": 53.92440109514032
+      }
+    },
+    {
+      "name": "Kolkata",
+      "state": "West Bengal",
+      "latitude": 22.573,
+      "longitude": 88.364,
+      "records": 2922,
+      "avg_weather": {
+        "temperature": 29.03968253968254,
+        "humidity": 66.84804928131418,
+        "pressure": 1008.2339199447896,
+        "wind_speed": 10.771877156659766,
+        "cloud_cover": 53.138774811772755
+      }
+    },
+    {
+      "name": "Lucknow",
+      "state": "Uttar Pradesh",
+      "latitude": 26.847,
+      "longitude": 80.947,
+      "records": 2922,
+      "avg_weather": {
+        "temperature": 28.950606165569795,
+        "humidity": 59.18305954825462,
+        "pressure": 1008.246969172151,
+        "wind_speed": 10.58753030827849,
+        "cloud_cover": 47.502635181382615
+      }
+    },
+    {
+      "name": "Mumbai",
+      "state": "Maharashtra",
+      "latitude": 19.076,
+      "longitude": 72.878,
+      "records": 2922,
+      "avg_weather": {
+        "temperature": 28.961464088397793,
+        "humidity": 66.69356605065023,
+        "pressure": 1008.2607044198895,
+        "wind_speed": 10.684357734806628,
+        "cloud_cover": 53.22683093771389
+      }
+    },
+    {
+      "name": "Pune",
+      "state": "Maharashtra",
+      "latitude": 18.52,
+      "longitude": 73.857,
+      "records": 2922,
+      "avg_weather": {
+        "temperature": 29.026353915143154,
+        "humidity": 60.90071868583163,
+        "pressure": 1008.2408416695412,
+        "wind_speed": 10.617074853397725,
+        "cloud_cover": 48.668377823408626
+      }
+    },
+    {
+      "name": "Visakhapatnam",
+      "state": "Andhra Pradesh",
+      "latitude": 17.687,
+      "longitude": 83.218,
+      "records": 2922,
+      "avg_weather": {
+        "temperature": 28.93125433125433,
+        "humidity": 63.89127310061601,
+        "pressure": 1008.2369022869021,
+        "wind_speed": 10.673111573111573,
+        "cloud_cover": 51.201060917180016
+      }
+    }
+  ],
+  "split": {
+    "type": "chronological",
+    "train": 24544,
+    "validation": 5260,
+    "test": 5260
+  },
+  "models": {
+    "Linear Regression (Baseline)": {
+      "validation": {
+        "mae": 6.474494940384063,
+        "rmse": 13.771686518837498,
+        "r2": 0.21815473880494995
+      },
+      "test": {
+        "mae": 5.0808413097333185,
+        "rmse": 11.762612319517967,
+        "r2": 0.21151503123412607
+      }
+    },
+    "Random Forest": {
+      "validation": {
+        "mae": 5.567030819333022,
+        "rmse": 13.584733029714988,
+        "r2": 0.2392380773185897
+      },
+      "test": {
+        "mae": 4.053635337008524,
+        "rmse": 11.543317715625829,
+        "r2": 0.2406409903318133
+      }
+    },
+    "Gradient Boosting": {
+      "validation": {
+        "mae": 5.266202826810289,
+        "rmse": 13.108863089444139,
+        "r2": 0.2916031738860263
+      },
+      "test": {
+        "mae": 3.8361978381425246,
+        "rmse": 11.195236664778871,
+        "r2": 0.28574644695252427
+      }
+    },
+    "Voting Ensemble (RF + GB)": {
+      "validation": {
+        "mae": 5.398087597356241,
+        "rmse": 13.246014313210615,
+        "r2": 0.276702454407058
+      },
+      "test": {
+        "mae": 3.9260979103171447,
+        "rmse": 11.278407876800008,
+        "r2": 0.27509441674228996
+      }
+    }
+  },
+  "best_model": "Gradient Boosting",
+  "ensemble_is_best": false,
+  "selection_metric": "validation RMSE",
+  "feature_importance": {
+    "method": "permutation importance on the test set (increase in RMSE)",
+    "features": [
+      {
+        "feature": "humidity",
+        "importance": 2.1717365536141764,
+        "std": 0.14778109065883666
+      },
+      {
+        "feature": "location",
+        "importance": 0.39478829539369614,
+        "std": 0.09830867244998927
+      },
+      {
+        "feature": "month_cos",
+        "importance": 0.20800950178524644,
+        "std": 0.08909087347003797
+      },
+      {
+        "feature": "cloud_cover",
+        "importance": 0.19160461652884492,
+        "std": 0.04522658052549256
+      },
+      {
+        "feature": "pressure",
+        "importance": 0.023538205213374398,
+        "std": 0.029125807303016157
+      },
+      {
+        "feature": "wind_speed",
+        "importance": 0.005129341099954133,
+        "std": 0.016021931880164465
+      },
+      {
+        "feature": "month",
+        "importance": 0.003909629991322916,
+        "std": 0.002942665305302142
+      },
+      {
+        "feature": "month_sin",
+        "importance": -0.0041185842681816355,
+        "std": 0.005385312688029992
+      },
+      {
+        "feature": "temperature",
+        "importance": -0.02318268623257964,
+        "std": 0.02411420619553504
+      }
+    ]
+  },
+  "risk_model": {
+    "precision": 0.15384615384615385,
+    "recall": 0.17857142857142858,
+    "f1": 0.1652892561983471,
+    "confusion_matrix": [
+      [
+        5149,
+        55
+      ],
+      [
+        46,
+        10
+      ]
+    ],
+    "roc_auc": 0.9269123339189635,
+    "trained": true,
+    "heavy_event_counts": {
+      "train": 310,
+      "val": 78,
+      "test": 56
+    },
+    "threshold_mm": 64.5,
+    "decision_probability": 0.5
+  },
+  "thresholds": {
+    "heavy_mm": 64.5,
+    "moderate_mm": 15.6,
+    "categories": [
+      {
+        "upper_mm": 0.1,
+        "label": "No rain"
+      },
+      {
+        "upper_mm": 15.6,
+        "label": "Light"
+      },
+      {
+        "upper_mm": 64.5,
+        "label": "Moderate"
+      },
+      {
+        "upper_mm": 115.6,
+        "label": "Heavy"
+      },
+      {
+        "upper_mm": 204.5,
+        "label": "Very heavy"
+      },
+      {
+        "upper_mm": null,
+        "label": "Extremely heavy"
+      }
+    ]
+  },
+  "geo_experiment": {
+    "val_rmse_without_lat_lon": 13.56878274088281,
+    "val_rmse_with_lat_lon": 13.564728191772815,
+    "lat_lon_used": false
+  },
+  "unseen_location_eval": {
+    "method": "GroupKFold(3) by location, Random Forest",
+    "mean_rmse": 11.90917665760277,
+    "mean_r2": 0.16281565588718394
+  },
+  "data_quality": {
+    "rows_raw": 35064,
+    "columns": [
+      "date",
+      "location",
+      "state",
+      "latitude",
+      "longitude",
+      "temperature",
+      "humidity",
+      "pressure",
+      "wind_speed",
+      "cloud_cover",
+      "rainfall"
+    ],
+    "detected_columns": {
+      "date": "date",
+      "location": "location",
+      "state": "state",
+      "latitude": "latitude",
+      "longitude": "longitude",
+      "target": "rainfall"
+    },
+    "missing_per_column": {
+      "date": 0,
+      "location": 0,
+      "state": 0,
+      "latitude": 0,
+      "longitude": 0,
+      "temperature": 351,
+      "humidity": 0,
+      "pressure": 351,
+      "wind_speed": 351,
+      "cloud_cover": 0,
+      "rainfall": 0
+    },
+    "duplicate_rows": 0,
+    "outliers_iqr": {
+      "latitude": 0,
+      "longitude": 2922,
+      "temperature": 63,
+      "humidity": 0,
+      "pressure": 169,
+      "wind_speed": 101,
+      "cloud_cover": 0,
+      "rainfall": 0
+    },
+    "rows_clean": 35064,
+    "target_summary": {
+      "count": 35064.0,
+      "mean": 3.9140628564909874,
+      "std": 14.102770753701236,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 226.7
+    },
+    "target_skew": 5.706873314765417
+  },
+  "history": {
+    "series": [
+      {
+        "period": "2015-01",
+        "mean_rainfall": 0.08978494623655915
+      },
+      {
+        "period": "2015-02",
+        "mean_rainfall": 0.09702380952380953
+      },
+      {
+        "period": "2015-03",
+        "mean_rainfall": 0.185752688172043
+      },
+      {
+        "period": "2015-04",
+        "mean_rainfall": 0.19444444444444445
+      },
+      {
+        "period": "2015-05",
+        "mean_rainfall": 0.14973118279569894
+      },
+      {
+        "period": "2015-06",
+        "mean_rainfall": 10.238055555555556
+      },
+      {
+        "period": "2015-07",
+        "mean_rainfall": 13.518548387096773
+      },
+      {
+        "period": "2015-08",
+        "mean_rainfall": 11.258333333333335
+      },
+      {
+        "period": "2015-09",
+        "mean_rainfall": 12.683055555555557
+      },
+      {
+        "period": "2015-10",
+        "mean_rainfall": 0.3086021505376344
+      },
+      {
+        "period": "2015-11",
+        "mean_rainfall": 0.33222222222222225
+      },
+      {
+        "period": "2015-12",
+        "mean_rainfall": 0.052150537634408606
+      },
+      {
+        "period": "2016-01",
+        "mean_rainfall": 0.12553763440860213
+      },
+      {
+        "period": "2016-02",
+        "mean_rainfall": 0.09482758620689655
+      },
+      {
+        "period": "2016-03",
+        "mean_rainfall": 0.5271505376344086
+      },
+      {
+        "period": "2016-04",
+        "mean_rainfall": 0.27
+      },
+      {
+        "period": "2016-05",
+        "mean_rainfall": 0.2887096774193548
+      },
+      {
+        "period": "2016-06",
+        "mean_rainfall": 11.385833333333332
+      },
+      {
+        "period": "2016-07",
+        "mean_rainfall": 9.189516129032258
+      },
+      {
+        "period": "2016-08",
+        "mean_rainfall": 9.19489247311828
+      },
+      {
+        "period": "2016-09",
+        "mean_rainfall": 11.220277777777778
+      },
+      {
+        "period": "2016-10",
+        "mean_rainfall": 0.7032258064516129
+      },
+      {
+        "period": "2016-11",
+        "mean_rainfall": 0.36750000000000005
+      },
+      {
+        "period": "2016-12",
+        "mean_rainfall": 0.2290322580645161
+      },
+      {
+        "period": "2017-01",
+        "mean_rainfall": 0.09919354838709676
+      },
+      {
+        "period": "2017-02",
+        "mean_rainfall": 0.40595238095238095
+      },
+      {
+        "period": "2017-03",
+        "mean_rainfall": 0.22096774193548388
+      },
+      {
+        "period": "2017-04",
+        "mean_rainfall": 0.10666666666666666
+      },
+      {
+        "period": "2017-05",
+        "mean_rainfall": 0.0739247311827957
+      },
+      {
+        "period": "2017-06",
+        "mean_rainfall": 10.543888888888889
+      },
+      {
+        "period": "2017-07",
+        "mean_rainfall": 10.576344086021505
+      },
+      {
+        "period": "2017-08",
+        "mean_rainfall": 12.064247311827959
+      },
+      {
+        "period": "2017-09",
+        "mean_rainfall": 12.658055555555555
+      },
+      {
+        "period": "2017-10",
+        "mean_rainfall": 0.7120967741935483
+      },
+      {
+        "period": "2017-11",
+        "mean_rainfall": 0.7844444444444444
+      },
+      {
+        "period": "2017-12",
+        "mean_rainfall": 0.31048387096774194
+      },
+      {
+        "period": "2018-01",
+        "mean_rainfall": 0.36155913978494625
+      },
+      {
+        "period": "2018-02",
+        "mean_rainfall": 0.3020833333333333
+      },
+      {
+        "period": "2018-03",
+        "mean_rainfall": 0.44139784946236565
+      },
+      {
+        "period": "2018-04",
+        "mean_rainfall": 0.19305555555555556
+      },
+      {
+        "period": "2018-05",
+        "mean_rainfall": 0.026881720430107527
+      },
+      {
+        "period": "2018-06",
+        "mean_rainfall": 10.297777777777778
+      },
+      {
+        "period": "2018-07",
+        "mean_rainfall": 10.825268817204302
+      },
+      {
+        "period": "2018-08",
+        "mean_rainfall": 9.335215053763442
+      },
+      {
+        "period": "2018-09",
+        "mean_rainfall": 10.797777777777778
+      },
+      {
+        "period": "2018-10",
+        "mean_rainfall": 0.5059139784946236
+      },
+      {
+        "period": "2018-11",
+        "mean_rainfall": 0.9555555555555556
+      },
+      {
+        "period": "2018-12",
+        "mean_rainfall": 0.39435483870967747
+      },
+      {
+        "period": "2019-01",
+        "mean_rainfall": 0.4459677419354839
+      },
+      {
+        "period": "2019-02",
+        "mean_rainfall": 0.2747023809523809
+      },
+      {
+        "period": "2019-03",
+        "mean_rainfall": 0.18951612903225806
+      },
+      {
+        "period": "2019-04",
+        "mean_rainfall": 0.21333333333333332
+      },
+      {
+        "period": "2019-05",
+        "mean_rainfall": 0.12553763440860213
+      },
+      {
+        "period": "2019-06",
+        "mean_rainfall": 9.762777777777778
+      },
+      {
+        "period": "2019-07",
+        "mean_rainfall": 10.1002688172043
+      },
+      {
+        "period": "2019-08",
+        "mean_rainfall": 11.726612903225805
+      },
+      {
+        "period": "2019-09",
+        "mean_rainfall": 9.645277777777778
+      },
+      {
+        "period": "2019-10",
+        "mean_rainfall": 0.29435483870967744
+      },
+      {
+        "period": "2019-11",
+        "mean_rainfall": 0.7350000000000001
+      },
+      {
+        "period": "2019-12",
+        "mean_rainfall": 0.23655913978494625
+      },
+      {
+        "period": "2020-01",
+        "mean_rainfall": 0.16290322580645158
+      },
+      {
+        "period": "2020-02",
+        "mean_rainfall": 0.35287356321839086
+      },
+      {
+        "period": "2020-03",
+        "mean_rainfall": 0.24973118279569895
+      },
+      {
+        "period": "2020-04",
+        "mean_rainfall": 0.21361111111111114
+      },
+      {
+        "period": "2020-05",
+        "mean_rainfall": 0.05188172043010753
+      },
+      {
+        "period": "2020-06",
+        "mean_rainfall": 10.448611111111111
+      },
+      {
+        "period": "2020-07",
+        "mean_rainfall": 13.585215053763438
+      },
+      {
+        "period": "2020-08",
+        "mean_rainfall": 10.019354838709678
+      },
+      {
+        "period": "2020-09",
+        "mean_rainfall": 11.298611111111112
+      },
+      {
+        "period": "2020-10",
+        "mean_rainfall": 0.4145161290322581
+      },
+      {
+        "period": "2020-11",
+        "mean_rainfall": 0.6108333333333333
+      },
+      {
+        "period": "2020-12",
+        "mean_rainfall": 0.4083333333333333
+      },
+      {
+        "period": "2021-01",
+        "mean_rainfall": 0.13736559139784946
+      },
+      {
+        "period": "2021-02",
+        "mean_rainfall": 0.33898809523809526
+      },
+      {
+        "period": "2021-03",
+        "mean_rainfall": 0.2271505376344086
+      },
+      {
+        "period": "2021-04",
+        "mean_rainfall": 0.37805555555555553
+      },
+      {
+        "period": "2021-05",
+        "mean_rainfall": 0.12741935483870967
+      },
+      {
+        "period": "2021-06",
+        "mean_rainfall": 11.683611111111109
+      },
+      {
+        "period": "2021-07",
+        "mean_rainfall": 12.262903225806452
+      },
+      {
+        "period": "2021-08",
+        "mean_rainfall": 12.6741935483871
+      },
+      {
+        "period": "2021-09",
+        "mean_rainfall": 10.510555555555555
+      },
+      {
+        "period": "2021-10",
+        "mean_rainfall": 0.8618279569892474
+      },
+      {
+        "period": "2021-11",
+        "mean_rainfall": 0.5422222222222222
+      },
+      {
+        "period": "2021-12",
+        "mean_rainfall": 0.22849462365591397
+      },
+      {
+        "period": "2022-01",
+        "mean_rainfall": 0.25645161290322577
+      },
+      {
+        "period": "2022-02",
+        "mean_rainfall": 0.23898809523809528
+      },
+      {
+        "period": "2022-03",
+        "mean_rainfall": 0.2024193548387097
+      },
+      {
+        "period": "2022-04",
+        "mean_rainfall": 0.3194444444444444
+      },
+      {
+        "period": "2022-05",
+        "mean_rainfall": 0.11666666666666667
+      },
+      {
+        "period": "2022-06",
+        "mean_rainfall": 11.102777777777778
+      },
+      {
+        "period": "2022-07",
+        "mean_rainfall": 10.050806451612905
+      },
+      {
+        "period": "2022-08",
+        "mean_rainfall": 11.754032258064516
+      },
+      {
+        "period": "2022-09",
+        "mean_rainfall": 12.051944444444445
+      },
+      {
+        "period": "2022-10",
+        "mean_rainfall": 0.914516129032258
+      },
+      {
+        "period": "2022-11",
+        "mean_rainfall": 0.5847222222222223
+      },
+      {
+        "period": "2022-12",
+        "mean_rainfall": 0.19946236559139785
+      }
+    ],
+    "series_by_location": {
+      "Bengaluru": [
+        {
+          "period": "2015-01",
+          "mean_rainfall": 0.4258064516129032
+        },
+        {
+          "period": "2015-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-03",
+          "mean_rainfall": 0.041935483870967745
+        },
+        {
+          "period": "2015-04",
+          "mean_rainfall": 0.36333333333333334
+        },
+        {
+          "period": "2015-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-06",
+          "mean_rainfall": 2.7099999999999995
+        },
+        {
+          "period": "2015-07",
+          "mean_rainfall": 3.8193548387096774
+        },
+        {
+          "period": "2015-08",
+          "mean_rainfall": 3.787096774193548
+        },
+        {
+          "period": "2015-09",
+          "mean_rainfall": 5.1866666666666665
+        },
+        {
+          "period": "2015-10",
+          "mean_rainfall": 0.08709677419354839
+        },
+        {
+          "period": "2015-11",
+          "mean_rainfall": 0.2833333333333333
+        },
+        {
+          "period": "2015-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-01",
+          "mean_rainfall": 0.03870967741935484
+        },
+        {
+          "period": "2016-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-03",
+          "mean_rainfall": 0.035483870967741936
+        },
+        {
+          "period": "2016-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-05",
+          "mean_rainfall": 0.7290322580645162
+        },
+        {
+          "period": "2016-06",
+          "mean_rainfall": 3.7366666666666664
+        },
+        {
+          "period": "2016-07",
+          "mean_rainfall": 2.832258064516129
+        },
+        {
+          "period": "2016-08",
+          "mean_rainfall": 4.209677419354839
+        },
+        {
+          "period": "2016-09",
+          "mean_rainfall": 6.2
+        },
+        {
+          "period": "2016-10",
+          "mean_rainfall": 0.5161290322580645
+        },
+        {
+          "period": "2016-11",
+          "mean_rainfall": 0.32
+        },
+        {
+          "period": "2016-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-03",
+          "mean_rainfall": 0.45483870967741935
+        },
+        {
+          "period": "2017-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-06",
+          "mean_rainfall": 5.23
+        },
+        {
+          "period": "2017-07",
+          "mean_rainfall": 2.9774193548387102
+        },
+        {
+          "period": "2017-08",
+          "mean_rainfall": 2.0967741935483875
+        },
+        {
+          "period": "2017-09",
+          "mean_rainfall": 4.683333333333334
+        },
+        {
+          "period": "2017-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-01",
+          "mean_rainfall": 0.39354838709677414
+        },
+        {
+          "period": "2018-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-03",
+          "mean_rainfall": 0.4129032258064516
+        },
+        {
+          "period": "2018-04",
+          "mean_rainfall": 0.2833333333333333
+        },
+        {
+          "period": "2018-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-06",
+          "mean_rainfall": 4.793333333333334
+        },
+        {
+          "period": "2018-07",
+          "mean_rainfall": 4.332258064516129
+        },
+        {
+          "period": "2018-08",
+          "mean_rainfall": 3.619354838709678
+        },
+        {
+          "period": "2018-09",
+          "mean_rainfall": 6.853333333333333
+        },
+        {
+          "period": "2018-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-11",
+          "mean_rainfall": 0.16666666666666666
+        },
+        {
+          "period": "2018-12",
+          "mean_rainfall": 1.9967741935483871
+        },
+        {
+          "period": "2019-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-03",
+          "mean_rainfall": 0.39354838709677414
+        },
+        {
+          "period": "2019-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-06",
+          "mean_rainfall": 5.173333333333333
+        },
+        {
+          "period": "2019-07",
+          "mean_rainfall": 4.716129032258064
+        },
+        {
+          "period": "2019-08",
+          "mean_rainfall": 5.206451612903226
+        },
+        {
+          "period": "2019-09",
+          "mean_rainfall": 5.343333333333333
+        },
+        {
+          "period": "2019-10",
+          "mean_rainfall": 0.6258064516129032
+        },
+        {
+          "period": "2019-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-12",
+          "mean_rainfall": 0.025806451612903226
+        },
+        {
+          "period": "2020-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-02",
+          "mean_rainfall": 0.11379310344827585
+        },
+        {
+          "period": "2020-03",
+          "mean_rainfall": 0.14193548387096774
+        },
+        {
+          "period": "2020-04",
+          "mean_rainfall": 0.07
+        },
+        {
+          "period": "2020-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-06",
+          "mean_rainfall": 3.3899999999999997
+        },
+        {
+          "period": "2020-07",
+          "mean_rainfall": 2.2838709677419353
+        },
+        {
+          "period": "2020-08",
+          "mean_rainfall": 4.890322580645161
+        },
+        {
+          "period": "2020-09",
+          "mean_rainfall": 2.08
+        },
+        {
+          "period": "2020-10",
+          "mean_rainfall": 1.206451612903226
+        },
+        {
+          "period": "2020-11",
+          "mean_rainfall": 1.0366666666666666
+        },
+        {
+          "period": "2020-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-05",
+          "mean_rainfall": 0.10967741935483871
+        },
+        {
+          "period": "2021-06",
+          "mean_rainfall": 3.1966666666666668
+        },
+        {
+          "period": "2021-07",
+          "mean_rainfall": 3.4064516129032256
+        },
+        {
+          "period": "2021-08",
+          "mean_rainfall": 0.8064516129032258
+        },
+        {
+          "period": "2021-09",
+          "mean_rainfall": 3.27
+        },
+        {
+          "period": "2021-10",
+          "mean_rainfall": 0.07096774193548387
+        },
+        {
+          "period": "2021-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-12",
+          "mean_rainfall": 0.9903225806451613
+        },
+        {
+          "period": "2022-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-03",
+          "mean_rainfall": 0.3645161290322581
+        },
+        {
+          "period": "2022-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-05",
+          "mean_rainfall": 0.08387096774193549
+        },
+        {
+          "period": "2022-06",
+          "mean_rainfall": 3.8399999999999994
+        },
+        {
+          "period": "2022-07",
+          "mean_rainfall": 1.3064516129032258
+        },
+        {
+          "period": "2022-08",
+          "mean_rainfall": 6.151612903225806
+        },
+        {
+          "period": "2022-09",
+          "mean_rainfall": 3.3066666666666666
+        },
+        {
+          "period": "2022-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-12",
+          "mean_rainfall": 0.0
+        }
+      ],
+      "Chennai": [
+        {
+          "period": "2015-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-02",
+          "mean_rainfall": 0.42142857142857143
+        },
+        {
+          "period": "2015-03",
+          "mean_rainfall": 0.04838709677419355
+        },
+        {
+          "period": "2015-04",
+          "mean_rainfall": 0.060000000000000005
+        },
+        {
+          "period": "2015-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-06",
+          "mean_rainfall": 3.743333333333333
+        },
+        {
+          "period": "2015-07",
+          "mean_rainfall": 9.293548387096775
+        },
+        {
+          "period": "2015-08",
+          "mean_rainfall": 6.667741935483871
+        },
+        {
+          "period": "2015-09",
+          "mean_rainfall": 11.963333333333335
+        },
+        {
+          "period": "2015-10",
+          "mean_rainfall": 0.864516129032258
+        },
+        {
+          "period": "2015-11",
+          "mean_rainfall": 0.8233333333333334
+        },
+        {
+          "period": "2015-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-03",
+          "mean_rainfall": 1.8903225806451613
+        },
+        {
+          "period": "2016-04",
+          "mean_rainfall": 0.2866666666666667
+        },
+        {
+          "period": "2016-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-06",
+          "mean_rainfall": 9.09
+        },
+        {
+          "period": "2016-07",
+          "mean_rainfall": 6.97741935483871
+        },
+        {
+          "period": "2016-08",
+          "mean_rainfall": 11.66451612903226
+        },
+        {
+          "period": "2016-09",
+          "mean_rainfall": 4.746666666666667
+        },
+        {
+          "period": "2016-10",
+          "mean_rainfall": 0.15483870967741936
+        },
+        {
+          "period": "2016-11",
+          "mean_rainfall": 0.17666666666666667
+        },
+        {
+          "period": "2016-12",
+          "mean_rainfall": 0.11612903225806452
+        },
+        {
+          "period": "2017-01",
+          "mean_rainfall": 0.1032258064516129
+        },
+        {
+          "period": "2017-02",
+          "mean_rainfall": 0.5035714285714286
+        },
+        {
+          "period": "2017-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-06",
+          "mean_rainfall": 13.890000000000002
+        },
+        {
+          "period": "2017-07",
+          "mean_rainfall": 10.851612903225808
+        },
+        {
+          "period": "2017-08",
+          "mean_rainfall": 15.509677419354839
+        },
+        {
+          "period": "2017-09",
+          "mean_rainfall": 13.496666666666666
+        },
+        {
+          "period": "2017-10",
+          "mean_rainfall": 1.7516129032258063
+        },
+        {
+          "period": "2017-11",
+          "mean_rainfall": 1.1033333333333333
+        },
+        {
+          "period": "2017-12",
+          "mean_rainfall": 0.8774193548387097
+        },
+        {
+          "period": "2018-01",
+          "mean_rainfall": 0.6354838709677421
+        },
+        {
+          "period": "2018-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-03",
+          "mean_rainfall": 0.25806451612903225
+        },
+        {
+          "period": "2018-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-06",
+          "mean_rainfall": 5.72
+        },
+        {
+          "period": "2018-07",
+          "mean_rainfall": 9.983870967741936
+        },
+        {
+          "period": "2018-08",
+          "mean_rainfall": 4.883870967741935
+        },
+        {
+          "period": "2018-09",
+          "mean_rainfall": 5.0200000000000005
+        },
+        {
+          "period": "2018-10",
+          "mean_rainfall": 0.1870967741935484
+        },
+        {
+          "period": "2018-11",
+          "mean_rainfall": 0.13666666666666666
+        },
+        {
+          "period": "2018-12",
+          "mean_rainfall": 1.103225806451613
+        },
+        {
+          "period": "2019-01",
+          "mean_rainfall": 1.2774193548387098
+        },
+        {
+          "period": "2019-02",
+          "mean_rainfall": 0.7107142857142856
+        },
+        {
+          "period": "2019-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-04",
+          "mean_rainfall": 0.4233333333333333
+        },
+        {
+          "period": "2019-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-06",
+          "mean_rainfall": 2.81
+        },
+        {
+          "period": "2019-07",
+          "mean_rainfall": 6.187096774193548
+        },
+        {
+          "period": "2019-08",
+          "mean_rainfall": 8.406451612903227
+        },
+        {
+          "period": "2019-09",
+          "mean_rainfall": 10.620000000000001
+        },
+        {
+          "period": "2019-10",
+          "mean_rainfall": 0.667741935483871
+        },
+        {
+          "period": "2019-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-01",
+          "mean_rainfall": 0.32903225806451614
+        },
+        {
+          "period": "2020-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-06",
+          "mean_rainfall": 5.026666666666667
+        },
+        {
+          "period": "2020-07",
+          "mean_rainfall": 9.338709677419354
+        },
+        {
+          "period": "2020-08",
+          "mean_rainfall": 7.4806451612903215
+        },
+        {
+          "period": "2020-09",
+          "mean_rainfall": 6.3
+        },
+        {
+          "period": "2020-10",
+          "mean_rainfall": 0.567741935483871
+        },
+        {
+          "period": "2020-11",
+          "mean_rainfall": 0.4866666666666667
+        },
+        {
+          "period": "2020-12",
+          "mean_rainfall": 2.009677419354839
+        },
+        {
+          "period": "2021-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-02",
+          "mean_rainfall": 1.0357142857142858
+        },
+        {
+          "period": "2021-03",
+          "mean_rainfall": 0.7354838709677418
+        },
+        {
+          "period": "2021-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-05",
+          "mean_rainfall": 0.18387096774193548
+        },
+        {
+          "period": "2021-06",
+          "mean_rainfall": 11.776666666666667
+        },
+        {
+          "period": "2021-07",
+          "mean_rainfall": 11.429032258064515
+        },
+        {
+          "period": "2021-08",
+          "mean_rainfall": 12.380645161290323
+        },
+        {
+          "period": "2021-09",
+          "mean_rainfall": 7.706666666666666
+        },
+        {
+          "period": "2021-10",
+          "mean_rainfall": 1.864516129032258
+        },
+        {
+          "period": "2021-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-01",
+          "mean_rainfall": 0.5387096774193548
+        },
+        {
+          "period": "2022-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-06",
+          "mean_rainfall": 5.876666666666666
+        },
+        {
+          "period": "2022-07",
+          "mean_rainfall": 10.577419354838709
+        },
+        {
+          "period": "2022-08",
+          "mean_rainfall": 10.67741935483871
+        },
+        {
+          "period": "2022-09",
+          "mean_rainfall": 12.123333333333333
+        },
+        {
+          "period": "2022-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-11",
+          "mean_rainfall": 0.39333333333333337
+        },
+        {
+          "period": "2022-12",
+          "mean_rainfall": 0.15161290322580645
+        }
+      ],
+      "Delhi": [
+        {
+          "period": "2015-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-04",
+          "mean_rainfall": 0.27666666666666667
+        },
+        {
+          "period": "2015-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-06",
+          "mean_rainfall": 1.8
+        },
+        {
+          "period": "2015-07",
+          "mean_rainfall": 1.3774193548387097
+        },
+        {
+          "period": "2015-08",
+          "mean_rainfall": 1.2645161290322582
+        },
+        {
+          "period": "2015-09",
+          "mean_rainfall": 2.4366666666666665
+        },
+        {
+          "period": "2015-10",
+          "mean_rainfall": 0.1774193548387097
+        },
+        {
+          "period": "2015-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-12",
+          "mean_rainfall": 0.14516129032258066
+        },
+        {
+          "period": "2016-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-02",
+          "mean_rainfall": 0.14137931034482756
+        },
+        {
+          "period": "2016-03",
+          "mean_rainfall": 0.832258064516129
+        },
+        {
+          "period": "2016-04",
+          "mean_rainfall": 0.23
+        },
+        {
+          "period": "2016-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-06",
+          "mean_rainfall": 1.38
+        },
+        {
+          "period": "2016-07",
+          "mean_rainfall": 1.9483870967741934
+        },
+        {
+          "period": "2016-08",
+          "mean_rainfall": 2.193548387096774
+        },
+        {
+          "period": "2016-09",
+          "mean_rainfall": 0.33999999999999997
+        },
+        {
+          "period": "2016-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-11",
+          "mean_rainfall": 0.4966666666666667
+        },
+        {
+          "period": "2016-12",
+          "mean_rainfall": 1.1225806451612903
+        },
+        {
+          "period": "2017-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-02",
+          "mean_rainfall": 0.024999999999999998
+        },
+        {
+          "period": "2017-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-04",
+          "mean_rainfall": 0.02333333333333333
+        },
+        {
+          "period": "2017-05",
+          "mean_rainfall": 0.0064516129032258064
+        },
+        {
+          "period": "2017-06",
+          "mean_rainfall": 1.8900000000000001
+        },
+        {
+          "period": "2017-07",
+          "mean_rainfall": 0.9387096774193548
+        },
+        {
+          "period": "2017-08",
+          "mean_rainfall": 1.3838709677419356
+        },
+        {
+          "period": "2017-09",
+          "mean_rainfall": 1.2366666666666668
+        },
+        {
+          "period": "2017-10",
+          "mean_rainfall": 0.2709677419354839
+        },
+        {
+          "period": "2017-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-12",
+          "mean_rainfall": 0.16129032258064516
+        },
+        {
+          "period": "2018-01",
+          "mean_rainfall": 0.4161290322580645
+        },
+        {
+          "period": "2018-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-04",
+          "mean_rainfall": 0.18333333333333332
+        },
+        {
+          "period": "2018-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-06",
+          "mean_rainfall": 2.9466666666666668
+        },
+        {
+          "period": "2018-07",
+          "mean_rainfall": 1.9548387096774194
+        },
+        {
+          "period": "2018-08",
+          "mean_rainfall": 0.47096774193548385
+        },
+        {
+          "period": "2018-09",
+          "mean_rainfall": 0.36666666666666664
+        },
+        {
+          "period": "2018-10",
+          "mean_rainfall": 0.5193548387096775
+        },
+        {
+          "period": "2018-11",
+          "mean_rainfall": 1.0166666666666666
+        },
+        {
+          "period": "2018-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-01",
+          "mean_rainfall": 0.12580645161290321
+        },
+        {
+          "period": "2019-02",
+          "mean_rainfall": 0.07857142857142858
+        },
+        {
+          "period": "2019-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-04",
+          "mean_rainfall": 0.08333333333333333
+        },
+        {
+          "period": "2019-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-06",
+          "mean_rainfall": 1.5133333333333332
+        },
+        {
+          "period": "2019-07",
+          "mean_rainfall": 0.938709677419355
+        },
+        {
+          "period": "2019-08",
+          "mean_rainfall": 2.3451612903225807
+        },
+        {
+          "period": "2019-09",
+          "mean_rainfall": 1.65
+        },
+        {
+          "period": "2019-10",
+          "mean_rainfall": 0.03225806451612903
+        },
+        {
+          "period": "2019-11",
+          "mean_rainfall": 0.02333333333333333
+        },
+        {
+          "period": "2019-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-06",
+          "mean_rainfall": 1.0433333333333334
+        },
+        {
+          "period": "2020-07",
+          "mean_rainfall": 1.0064516129032257
+        },
+        {
+          "period": "2020-08",
+          "mean_rainfall": 0.8903225806451613
+        },
+        {
+          "period": "2020-09",
+          "mean_rainfall": 1.2466666666666666
+        },
+        {
+          "period": "2020-10",
+          "mean_rainfall": 0.16774193548387098
+        },
+        {
+          "period": "2020-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-02",
+          "mean_rainfall": 0.5892857142857143
+        },
+        {
+          "period": "2021-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-04",
+          "mean_rainfall": 0.22
+        },
+        {
+          "period": "2021-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-06",
+          "mean_rainfall": 0.39333333333333337
+        },
+        {
+          "period": "2021-07",
+          "mean_rainfall": 1.0064516129032257
+        },
+        {
+          "period": "2021-08",
+          "mean_rainfall": 1.2806451612903227
+        },
+        {
+          "period": "2021-09",
+          "mean_rainfall": 1.0766666666666667
+        },
+        {
+          "period": "2021-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-11",
+          "mean_rainfall": 0.5700000000000001
+        },
+        {
+          "period": "2021-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-02",
+          "mean_rainfall": 0.55
+        },
+        {
+          "period": "2022-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-04",
+          "mean_rainfall": 0.14333333333333334
+        },
+        {
+          "period": "2022-05",
+          "mean_rainfall": 0.6387096774193549
+        },
+        {
+          "period": "2022-06",
+          "mean_rainfall": 3.8366666666666673
+        },
+        {
+          "period": "2022-07",
+          "mean_rainfall": 1.096774193548387
+        },
+        {
+          "period": "2022-08",
+          "mean_rainfall": 0.6741935483870968
+        },
+        {
+          "period": "2022-09",
+          "mean_rainfall": 2.6266666666666665
+        },
+        {
+          "period": "2022-10",
+          "mean_rainfall": 0.3096774193548387
+        },
+        {
+          "period": "2022-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-12",
+          "mean_rainfall": 0.0
+        }
+      ],
+      "Guwahati": [
+        {
+          "period": "2015-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-04",
+          "mean_rainfall": 0.6233333333333333
+        },
+        {
+          "period": "2015-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-06",
+          "mean_rainfall": 16.8
+        },
+        {
+          "period": "2015-07",
+          "mean_rainfall": 28.28709677419355
+        },
+        {
+          "period": "2015-08",
+          "mean_rainfall": 23.65806451612903
+        },
+        {
+          "period": "2015-09",
+          "mean_rainfall": 22.776666666666667
+        },
+        {
+          "period": "2015-10",
+          "mean_rainfall": 1.2354838709677418
+        },
+        {
+          "period": "2015-11",
+          "mean_rainfall": 0.21
+        },
+        {
+          "period": "2015-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-01",
+          "mean_rainfall": 0.12903225806451613
+        },
+        {
+          "period": "2016-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-03",
+          "mean_rainfall": 1.8516129032258064
+        },
+        {
+          "period": "2016-04",
+          "mean_rainfall": 0.7133333333333333
+        },
+        {
+          "period": "2016-05",
+          "mean_rainfall": 0.6967741935483871
+        },
+        {
+          "period": "2016-06",
+          "mean_rainfall": 20.639999999999997
+        },
+        {
+          "period": "2016-07",
+          "mean_rainfall": 21.770967741935483
+        },
+        {
+          "period": "2016-08",
+          "mean_rainfall": 14.341935483870966
+        },
+        {
+          "period": "2016-09",
+          "mean_rainfall": 24.59333333333333
+        },
+        {
+          "period": "2016-10",
+          "mean_rainfall": 4.22258064516129
+        },
+        {
+          "period": "2016-11",
+          "mean_rainfall": 0.7733333333333334
+        },
+        {
+          "period": "2016-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-01",
+          "mean_rainfall": 0.24193548387096775
+        },
+        {
+          "period": "2017-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-03",
+          "mean_rainfall": 0.11612903225806452
+        },
+        {
+          "period": "2017-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-06",
+          "mean_rainfall": 16.12
+        },
+        {
+          "period": "2017-07",
+          "mean_rainfall": 15.60967741935484
+        },
+        {
+          "period": "2017-08",
+          "mean_rainfall": 24.861290322580647
+        },
+        {
+          "period": "2017-09",
+          "mean_rainfall": 23.706666666666663
+        },
+        {
+          "period": "2017-10",
+          "mean_rainfall": 1.8806451612903226
+        },
+        {
+          "period": "2017-11",
+          "mean_rainfall": 0.16
+        },
+        {
+          "period": "2017-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-03",
+          "mean_rainfall": 2.3419354838709676
+        },
+        {
+          "period": "2018-04",
+          "mean_rainfall": 0.8
+        },
+        {
+          "period": "2018-05",
+          "mean_rainfall": 0.01935483870967742
+        },
+        {
+          "period": "2018-06",
+          "mean_rainfall": 13.806666666666667
+        },
+        {
+          "period": "2018-07",
+          "mean_rainfall": 18.58709677419355
+        },
+        {
+          "period": "2018-08",
+          "mean_rainfall": 20.245161290322585
+        },
+        {
+          "period": "2018-09",
+          "mean_rainfall": 18.2
+        },
+        {
+          "period": "2018-10",
+          "mean_rainfall": 2.032258064516129
+        },
+        {
+          "period": "2018-11",
+          "mean_rainfall": 4.61
+        },
+        {
+          "period": "2018-12",
+          "mean_rainfall": 0.48709677419354835
+        },
+        {
+          "period": "2019-01",
+          "mean_rainfall": 0.6322580645161291
+        },
+        {
+          "period": "2019-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-03",
+          "mean_rainfall": 0.04838709677419355
+        },
+        {
+          "period": "2019-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-05",
+          "mean_rainfall": 0.7645161290322581
+        },
+        {
+          "period": "2019-06",
+          "mean_rainfall": 29.65333333333334
+        },
+        {
+          "period": "2019-07",
+          "mean_rainfall": 25.37741935483871
+        },
+        {
+          "period": "2019-08",
+          "mean_rainfall": 28.874193548387098
+        },
+        {
+          "period": "2019-09",
+          "mean_rainfall": 15.71
+        },
+        {
+          "period": "2019-10",
+          "mean_rainfall": 1.2483870967741937
+        },
+        {
+          "period": "2019-11",
+          "mean_rainfall": 2.206666666666666
+        },
+        {
+          "period": "2019-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-02",
+          "mean_rainfall": 1.2448275862068963
+        },
+        {
+          "period": "2020-03",
+          "mean_rainfall": 2.693548387096774
+        },
+        {
+          "period": "2020-04",
+          "mean_rainfall": 1.0
+        },
+        {
+          "period": "2020-05",
+          "mean_rainfall": 0.22903225806451613
+        },
+        {
+          "period": "2020-06",
+          "mean_rainfall": 21.473333333333333
+        },
+        {
+          "period": "2020-07",
+          "mean_rainfall": 22.55806451612903
+        },
+        {
+          "period": "2020-08",
+          "mean_rainfall": 17.86774193548387
+        },
+        {
+          "period": "2020-09",
+          "mean_rainfall": 21.116666666666667
+        },
+        {
+          "period": "2020-10",
+          "mean_rainfall": 0.25161290322580643
+        },
+        {
+          "period": "2020-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-01",
+          "mean_rainfall": 0.5645161290322581
+        },
+        {
+          "period": "2021-02",
+          "mean_rainfall": 1.2285714285714284
+        },
+        {
+          "period": "2021-03",
+          "mean_rainfall": 0.1032258064516129
+        },
+        {
+          "period": "2021-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-06",
+          "mean_rainfall": 28.276666666666667
+        },
+        {
+          "period": "2021-07",
+          "mean_rainfall": 25.53870967741935
+        },
+        {
+          "period": "2021-08",
+          "mean_rainfall": 29.016129032258068
+        },
+        {
+          "period": "2021-09",
+          "mean_rainfall": 13.533333333333335
+        },
+        {
+          "period": "2021-10",
+          "mean_rainfall": 0.3709677419354839
+        },
+        {
+          "period": "2021-11",
+          "mean_rainfall": 0.61
+        },
+        {
+          "period": "2021-12",
+          "mean_rainfall": 0.6161290322580646
+        },
+        {
+          "period": "2022-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-04",
+          "mean_rainfall": 0.82
+        },
+        {
+          "period": "2022-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-06",
+          "mean_rainfall": 17.95
+        },
+        {
+          "period": "2022-07",
+          "mean_rainfall": 25.56451612903226
+        },
+        {
+          "period": "2022-08",
+          "mean_rainfall": 20.04516129032258
+        },
+        {
+          "period": "2022-09",
+          "mean_rainfall": 25.433333333333337
+        },
+        {
+          "period": "2022-10",
+          "mean_rainfall": 3.1193548387096777
+        },
+        {
+          "period": "2022-11",
+          "mean_rainfall": 2.3533333333333335
+        },
+        {
+          "period": "2022-12",
+          "mean_rainfall": 1.4483870967741934
+        }
+      ],
+      "Hyderabad": [
+        {
+          "period": "2015-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-02",
+          "mean_rainfall": 0.0642857142857143
+        },
+        {
+          "period": "2015-03",
+          "mean_rainfall": 0.7935483870967742
+        },
+        {
+          "period": "2015-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-05",
+          "mean_rainfall": 0.15806451612903227
+        },
+        {
+          "period": "2015-06",
+          "mean_rainfall": 3.7866666666666666
+        },
+        {
+          "period": "2015-07",
+          "mean_rainfall": 6.716129032258064
+        },
+        {
+          "period": "2015-08",
+          "mean_rainfall": 5.651612903225806
+        },
+        {
+          "period": "2015-09",
+          "mean_rainfall": 1.7133333333333332
+        },
+        {
+          "period": "2015-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-11",
+          "mean_rainfall": 0.6799999999999999
+        },
+        {
+          "period": "2015-12",
+          "mean_rainfall": 0.025806451612903226
+        },
+        {
+          "period": "2016-01",
+          "mean_rainfall": 0.2870967741935484
+        },
+        {
+          "period": "2016-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-03",
+          "mean_rainfall": 0.03870967741935484
+        },
+        {
+          "period": "2016-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-05",
+          "mean_rainfall": 0.6838709677419355
+        },
+        {
+          "period": "2016-06",
+          "mean_rainfall": 7.546666666666667
+        },
+        {
+          "period": "2016-07",
+          "mean_rainfall": 8.40967741935484
+        },
+        {
+          "period": "2016-08",
+          "mean_rainfall": 4.4709677419354845
+        },
+        {
+          "period": "2016-09",
+          "mean_rainfall": 3.713333333333333
+        },
+        {
+          "period": "2016-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-02",
+          "mean_rainfall": 0.9857142857142858
+        },
+        {
+          "period": "2017-03",
+          "mean_rainfall": 0.7645161290322581
+        },
+        {
+          "period": "2017-04",
+          "mean_rainfall": 0.66
+        },
+        {
+          "period": "2017-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-06",
+          "mean_rainfall": 4.596666666666666
+        },
+        {
+          "period": "2017-07",
+          "mean_rainfall": 8.78709677419355
+        },
+        {
+          "period": "2017-08",
+          "mean_rainfall": 3.874193548387097
+        },
+        {
+          "period": "2017-09",
+          "mean_rainfall": 6.223333333333334
+        },
+        {
+          "period": "2017-10",
+          "mean_rainfall": 0.6516129032258065
+        },
+        {
+          "period": "2017-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-12",
+          "mean_rainfall": 0.8096774193548387
+        },
+        {
+          "period": "2018-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-03",
+          "mean_rainfall": 0.24838709677419354
+        },
+        {
+          "period": "2018-04",
+          "mean_rainfall": 0.15666666666666668
+        },
+        {
+          "period": "2018-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-06",
+          "mean_rainfall": 6.996666666666668
+        },
+        {
+          "period": "2018-07",
+          "mean_rainfall": 7.206451612903226
+        },
+        {
+          "period": "2018-08",
+          "mean_rainfall": 8.264516129032259
+        },
+        {
+          "period": "2018-09",
+          "mean_rainfall": 7.7266666666666675
+        },
+        {
+          "period": "2018-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-11",
+          "mean_rainfall": 0.060000000000000005
+        },
+        {
+          "period": "2018-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-02",
+          "mean_rainfall": 0.8214285714285714
+        },
+        {
+          "period": "2019-03",
+          "mean_rainfall": 0.16774193548387098
+        },
+        {
+          "period": "2019-04",
+          "mean_rainfall": 0.9933333333333334
+        },
+        {
+          "period": "2019-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-06",
+          "mean_rainfall": 3.6566666666666667
+        },
+        {
+          "period": "2019-07",
+          "mean_rainfall": 7.496774193548387
+        },
+        {
+          "period": "2019-08",
+          "mean_rainfall": 2.212903225806452
+        },
+        {
+          "period": "2019-09",
+          "mean_rainfall": 5.8
+        },
+        {
+          "period": "2019-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-11",
+          "mean_rainfall": 0.61
+        },
+        {
+          "period": "2019-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-02",
+          "mean_rainfall": 0.0896551724137931
+        },
+        {
+          "period": "2020-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-05",
+          "mean_rainfall": 0.2
+        },
+        {
+          "period": "2020-06",
+          "mean_rainfall": 5.643333333333333
+        },
+        {
+          "period": "2020-07",
+          "mean_rainfall": 7.187096774193549
+        },
+        {
+          "period": "2020-08",
+          "mean_rainfall": 6.290322580645161
+        },
+        {
+          "period": "2020-09",
+          "mean_rainfall": 8.9
+        },
+        {
+          "period": "2020-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-12",
+          "mean_rainfall": 0.9741935483870967
+        },
+        {
+          "period": "2021-01",
+          "mean_rainfall": 0.5935483870967742
+        },
+        {
+          "period": "2021-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-03",
+          "mean_rainfall": 0.7451612903225807
+        },
+        {
+          "period": "2021-04",
+          "mean_rainfall": 0.26999999999999996
+        },
+        {
+          "period": "2021-05",
+          "mean_rainfall": 0.1935483870967742
+        },
+        {
+          "period": "2021-06",
+          "mean_rainfall": 5.483333333333333
+        },
+        {
+          "period": "2021-07",
+          "mean_rainfall": 7.912903225806451
+        },
+        {
+          "period": "2021-08",
+          "mean_rainfall": 5.058064516129032
+        },
+        {
+          "period": "2021-09",
+          "mean_rainfall": 9.4
+        },
+        {
+          "period": "2021-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-01",
+          "mean_rainfall": 0.5258064516129033
+        },
+        {
+          "period": "2022-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-04",
+          "mean_rainfall": 0.02666666666666667
+        },
+        {
+          "period": "2022-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-06",
+          "mean_rainfall": 4.666666666666667
+        },
+        {
+          "period": "2022-07",
+          "mean_rainfall": 8.358064516129033
+        },
+        {
+          "period": "2022-08",
+          "mean_rainfall": 6.532258064516129
+        },
+        {
+          "period": "2022-09",
+          "mean_rainfall": 4.513333333333334
+        },
+        {
+          "period": "2022-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-11",
+          "mean_rainfall": 0.06666666666666667
+        },
+        {
+          "period": "2022-12",
+          "mean_rainfall": 0.0
+        }
+      ],
+      "Jaipur": [
+        {
+          "period": "2015-01",
+          "mean_rainfall": 0.16451612903225804
+        },
+        {
+          "period": "2015-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-05",
+          "mean_rainfall": 0.4645161290322581
+        },
+        {
+          "period": "2015-06",
+          "mean_rainfall": 0.15
+        },
+        {
+          "period": "2015-07",
+          "mean_rainfall": 1.3483870967741938
+        },
+        {
+          "period": "2015-08",
+          "mean_rainfall": 1.803225806451613
+        },
+        {
+          "period": "2015-09",
+          "mean_rainfall": 0.81
+        },
+        {
+          "period": "2015-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-11",
+          "mean_rainfall": 0.5733333333333334
+        },
+        {
+          "period": "2015-12",
+          "mean_rainfall": 0.3032258064516129
+        },
+        {
+          "period": "2016-01",
+          "mean_rainfall": 0.10967741935483871
+        },
+        {
+          "period": "2016-02",
+          "mean_rainfall": 0.5310344827586208
+        },
+        {
+          "period": "2016-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-04",
+          "mean_rainfall": 0.42999999999999994
+        },
+        {
+          "period": "2016-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-06",
+          "mean_rainfall": 0.37
+        },
+        {
+          "period": "2016-07",
+          "mean_rainfall": 0.16451612903225804
+        },
+        {
+          "period": "2016-08",
+          "mean_rainfall": 2.7322580645161287
+        },
+        {
+          "period": "2016-09",
+          "mean_rainfall": 1.0266666666666668
+        },
+        {
+          "period": "2016-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-11",
+          "mean_rainfall": 0.016666666666666666
+        },
+        {
+          "period": "2016-12",
+          "mean_rainfall": 0.3096774193548387
+        },
+        {
+          "period": "2017-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-02",
+          "mean_rainfall": 0.3
+        },
+        {
+          "period": "2017-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-04",
+          "mean_rainfall": 0.07666666666666666
+        },
+        {
+          "period": "2017-05",
+          "mean_rainfall": 0.03225806451612903
+        },
+        {
+          "period": "2017-06",
+          "mean_rainfall": 0.6833333333333333
+        },
+        {
+          "period": "2017-07",
+          "mean_rainfall": 0.12903225806451613
+        },
+        {
+          "period": "2017-08",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-09",
+          "mean_rainfall": 2.0300000000000002
+        },
+        {
+          "period": "2017-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-11",
+          "mean_rainfall": 1.1566666666666667
+        },
+        {
+          "period": "2017-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-02",
+          "mean_rainfall": 1.3392857142857142
+        },
+        {
+          "period": "2018-03",
+          "mean_rainfall": 0.08064516129032258
+        },
+        {
+          "period": "2018-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-05",
+          "mean_rainfall": 0.08387096774193549
+        },
+        {
+          "period": "2018-06",
+          "mean_rainfall": 0.3233333333333333
+        },
+        {
+          "period": "2018-07",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-08",
+          "mean_rainfall": 0.9838709677419355
+        },
+        {
+          "period": "2018-09",
+          "mean_rainfall": 1.1966666666666665
+        },
+        {
+          "period": "2018-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-11",
+          "mean_rainfall": 0.01
+        },
+        {
+          "period": "2018-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-02",
+          "mean_rainfall": 0.010714285714285714
+        },
+        {
+          "period": "2019-03",
+          "mean_rainfall": 0.02903225806451613
+        },
+        {
+          "period": "2019-04",
+          "mean_rainfall": 0.31
+        },
+        {
+          "period": "2019-05",
+          "mean_rainfall": 0.25161290322580643
+        },
+        {
+          "period": "2019-06",
+          "mean_rainfall": 1.6033333333333333
+        },
+        {
+          "period": "2019-07",
+          "mean_rainfall": 0.49354838709677423
+        },
+        {
+          "period": "2019-08",
+          "mean_rainfall": 0.2064516129032258
+        },
+        {
+          "period": "2019-09",
+          "mean_rainfall": 0.6966666666666667
+        },
+        {
+          "period": "2019-10",
+          "mean_rainfall": 0.3806451612903226
+        },
+        {
+          "period": "2019-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-04",
+          "mean_rainfall": 0.21666666666666667
+        },
+        {
+          "period": "2020-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-06",
+          "mean_rainfall": 1.65
+        },
+        {
+          "period": "2020-07",
+          "mean_rainfall": 0.8774193548387097
+        },
+        {
+          "period": "2020-08",
+          "mean_rainfall": 0.3741935483870968
+        },
+        {
+          "period": "2020-09",
+          "mean_rainfall": 2.493333333333333
+        },
+        {
+          "period": "2020-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-06",
+          "mean_rainfall": 1.3933333333333335
+        },
+        {
+          "period": "2021-07",
+          "mean_rainfall": 1.3387096774193548
+        },
+        {
+          "period": "2021-08",
+          "mean_rainfall": 0.6548387096774194
+        },
+        {
+          "period": "2021-09",
+          "mean_rainfall": 1.2833333333333334
+        },
+        {
+          "period": "2021-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-11",
+          "mean_rainfall": 0.5166666666666667
+        },
+        {
+          "period": "2021-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-04",
+          "mean_rainfall": 0.38999999999999996
+        },
+        {
+          "period": "2022-05",
+          "mean_rainfall": 0.25161290322580643
+        },
+        {
+          "period": "2022-06",
+          "mean_rainfall": 0.3333333333333333
+        },
+        {
+          "period": "2022-07",
+          "mean_rainfall": 2.116129032258064
+        },
+        {
+          "period": "2022-08",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-09",
+          "mean_rainfall": 1.59
+        },
+        {
+          "period": "2022-10",
+          "mean_rainfall": 0.8419354838709678
+        },
+        {
+          "period": "2022-11",
+          "mean_rainfall": 0.14333333333333334
+        },
+        {
+          "period": "2022-12",
+          "mean_rainfall": 0.24516129032258063
+        }
+      ],
+      "Kochi": [
+        {
+          "period": "2015-01",
+          "mean_rainfall": 0.17096774193548386
+        },
+        {
+          "period": "2015-02",
+          "mean_rainfall": 0.6785714285714286
+        },
+        {
+          "period": "2015-03",
+          "mean_rainfall": 0.132258064516129
+        },
+        {
+          "period": "2015-04",
+          "mean_rainfall": 0.24000000000000002
+        },
+        {
+          "period": "2015-05",
+          "mean_rainfall": 0.012903225806451613
+        },
+        {
+          "period": "2015-06",
+          "mean_rainfall": 19.2
+        },
+        {
+          "period": "2015-07",
+          "mean_rainfall": 37.167741935483875
+        },
+        {
+          "period": "2015-08",
+          "mean_rainfall": 20.851612903225803
+        },
+        {
+          "period": "2015-09",
+          "mean_rainfall": 29.500000000000004
+        },
+        {
+          "period": "2015-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-11",
+          "mean_rainfall": 0.06666666666666667
+        },
+        {
+          "period": "2015-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-01",
+          "mean_rainfall": 0.4419354838709677
+        },
+        {
+          "period": "2016-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-03",
+          "mean_rainfall": 0.6419354838709677
+        },
+        {
+          "period": "2016-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-05",
+          "mean_rainfall": 0.3032258064516129
+        },
+        {
+          "period": "2016-06",
+          "mean_rainfall": 25.536666666666665
+        },
+        {
+          "period": "2016-07",
+          "mean_rainfall": 21.62903225806452
+        },
+        {
+          "period": "2016-08",
+          "mean_rainfall": 24.09677419354839
+        },
+        {
+          "period": "2016-09",
+          "mean_rainfall": 18.55
+        },
+        {
+          "period": "2016-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-12",
+          "mean_rainfall": 0.44516129032258067
+        },
+        {
+          "period": "2017-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-02",
+          "mean_rainfall": 1.9071428571428573
+        },
+        {
+          "period": "2017-03",
+          "mean_rainfall": 1.0903225806451613
+        },
+        {
+          "period": "2017-04",
+          "mean_rainfall": 0.52
+        },
+        {
+          "period": "2017-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-06",
+          "mean_rainfall": 23.46333333333333
+        },
+        {
+          "period": "2017-07",
+          "mean_rainfall": 20.319354838709682
+        },
+        {
+          "period": "2017-08",
+          "mean_rainfall": 29.0741935483871
+        },
+        {
+          "period": "2017-09",
+          "mean_rainfall": 33.3
+        },
+        {
+          "period": "2017-10",
+          "mean_rainfall": 1.1483870967741936
+        },
+        {
+          "period": "2017-11",
+          "mean_rainfall": 1.3433333333333333
+        },
+        {
+          "period": "2017-12",
+          "mean_rainfall": 1.2806451612903227
+        },
+        {
+          "period": "2018-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-03",
+          "mean_rainfall": 1.9258064516129034
+        },
+        {
+          "period": "2018-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-05",
+          "mean_rainfall": 0.20967741935483872
+        },
+        {
+          "period": "2018-06",
+          "mean_rainfall": 22.783333333333335
+        },
+        {
+          "period": "2018-07",
+          "mean_rainfall": 30.070967741935487
+        },
+        {
+          "period": "2018-08",
+          "mean_rainfall": 15.783870967741937
+        },
+        {
+          "period": "2018-09",
+          "mean_rainfall": 36.31333333333334
+        },
+        {
+          "period": "2018-10",
+          "mean_rainfall": 1.864516129032258
+        },
+        {
+          "period": "2018-11",
+          "mean_rainfall": 1.0166666666666666
+        },
+        {
+          "period": "2018-12",
+          "mean_rainfall": 0.33548387096774196
+        },
+        {
+          "period": "2019-01",
+          "mean_rainfall": 0.49354838709677423
+        },
+        {
+          "period": "2019-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-04",
+          "mean_rainfall": 0.02333333333333333
+        },
+        {
+          "period": "2019-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-06",
+          "mean_rainfall": 18.596666666666668
+        },
+        {
+          "period": "2019-07",
+          "mean_rainfall": 16.735483870967744
+        },
+        {
+          "period": "2019-08",
+          "mean_rainfall": 32.674193548387095
+        },
+        {
+          "period": "2019-09",
+          "mean_rainfall": 18.26
+        },
+        {
+          "period": "2019-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-11",
+          "mean_rainfall": 0.6
+        },
+        {
+          "period": "2019-12",
+          "mean_rainfall": 1.0806451612903225
+        },
+        {
+          "period": "2020-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-02",
+          "mean_rainfall": 1.1241379310344828
+        },
+        {
+          "period": "2020-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-06",
+          "mean_rainfall": 26.183333333333334
+        },
+        {
+          "period": "2020-07",
+          "mean_rainfall": 36.45483870967742
+        },
+        {
+          "period": "2020-08",
+          "mean_rainfall": 29.519354838709674
+        },
+        {
+          "period": "2020-09",
+          "mean_rainfall": 30.456666666666663
+        },
+        {
+          "period": "2020-10",
+          "mean_rainfall": 0.4161290322580645
+        },
+        {
+          "period": "2020-11",
+          "mean_rainfall": 1.2666666666666666
+        },
+        {
+          "period": "2020-12",
+          "mean_rainfall": 1.0032258064516129
+        },
+        {
+          "period": "2021-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-04",
+          "mean_rainfall": 3.2199999999999998
+        },
+        {
+          "period": "2021-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-06",
+          "mean_rainfall": 21.74666666666667
+        },
+        {
+          "period": "2021-07",
+          "mean_rainfall": 23.11935483870968
+        },
+        {
+          "period": "2021-08",
+          "mean_rainfall": 33.81612903225806
+        },
+        {
+          "period": "2021-09",
+          "mean_rainfall": 28.43333333333333
+        },
+        {
+          "period": "2021-10",
+          "mean_rainfall": 3.1322580645161286
+        },
+        {
+          "period": "2021-11",
+          "mean_rainfall": 2.183333333333333
+        },
+        {
+          "period": "2021-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-01",
+          "mean_rainfall": 0.7645161290322581
+        },
+        {
+          "period": "2022-02",
+          "mean_rainfall": 1.7214285714285715
+        },
+        {
+          "period": "2022-03",
+          "mean_rainfall": 1.0161290322580645
+        },
+        {
+          "period": "2022-04",
+          "mean_rainfall": 2.453333333333333
+        },
+        {
+          "period": "2022-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-06",
+          "mean_rainfall": 22.133333333333333
+        },
+        {
+          "period": "2022-07",
+          "mean_rainfall": 27.654838709677417
+        },
+        {
+          "period": "2022-08",
+          "mean_rainfall": 32.52258064516129
+        },
+        {
+          "period": "2022-09",
+          "mean_rainfall": 21.946666666666665
+        },
+        {
+          "period": "2022-10",
+          "mean_rainfall": 3.5064516129032253
+        },
+        {
+          "period": "2022-11",
+          "mean_rainfall": 2.9766666666666666
+        },
+        {
+          "period": "2022-12",
+          "mean_rainfall": 0.23870967741935484
+        }
+      ],
+      "Kolkata": [
+        {
+          "period": "2015-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-04",
+          "mean_rainfall": 0.04666666666666666
+        },
+        {
+          "period": "2015-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-06",
+          "mean_rainfall": 18.05666666666667
+        },
+        {
+          "period": "2015-07",
+          "mean_rainfall": 21.96451612903226
+        },
+        {
+          "period": "2015-08",
+          "mean_rainfall": 25.04838709677419
+        },
+        {
+          "period": "2015-09",
+          "mean_rainfall": 20.576666666666664
+        },
+        {
+          "period": "2015-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-11",
+          "mean_rainfall": 1.1233333333333335
+        },
+        {
+          "period": "2015-12",
+          "mean_rainfall": 0.06774193548387097
+        },
+        {
+          "period": "2016-01",
+          "mean_rainfall": 0.054838709677419356
+        },
+        {
+          "period": "2016-02",
+          "mean_rainfall": 0.46551724137931033
+        },
+        {
+          "period": "2016-03",
+          "mean_rainfall": 0.7516129032258063
+        },
+        {
+          "period": "2016-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-06",
+          "mean_rainfall": 17.9
+        },
+        {
+          "period": "2016-07",
+          "mean_rainfall": 15.961290322580647
+        },
+        {
+          "period": "2016-08",
+          "mean_rainfall": 13.309677419354838
+        },
+        {
+          "period": "2016-09",
+          "mean_rainfall": 24.60666666666667
+        },
+        {
+          "period": "2016-10",
+          "mean_rainfall": 0.8709677419354839
+        },
+        {
+          "period": "2016-11",
+          "mean_rainfall": 1.1466666666666667
+        },
+        {
+          "period": "2016-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-06",
+          "mean_rainfall": 21.15333333333333
+        },
+        {
+          "period": "2017-07",
+          "mean_rainfall": 14.138709677419355
+        },
+        {
+          "period": "2017-08",
+          "mean_rainfall": 14.048387096774194
+        },
+        {
+          "period": "2017-09",
+          "mean_rainfall": 10.72
+        },
+        {
+          "period": "2017-10",
+          "mean_rainfall": 1.7999999999999998
+        },
+        {
+          "period": "2017-11",
+          "mean_rainfall": 1.9866666666666666
+        },
+        {
+          "period": "2017-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-01",
+          "mean_rainfall": 1.1419354838709677
+        },
+        {
+          "period": "2018-02",
+          "mean_rainfall": 0.7321428571428571
+        },
+        {
+          "period": "2018-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-05",
+          "mean_rainfall": 0.00967741935483871
+        },
+        {
+          "period": "2018-06",
+          "mean_rainfall": 16.406666666666666
+        },
+        {
+          "period": "2018-07",
+          "mean_rainfall": 17.374193548387098
+        },
+        {
+          "period": "2018-08",
+          "mean_rainfall": 18.767741935483873
+        },
+        {
+          "period": "2018-09",
+          "mean_rainfall": 12.87
+        },
+        {
+          "period": "2018-10",
+          "mean_rainfall": 0.12580645161290321
+        },
+        {
+          "period": "2018-11",
+          "mean_rainfall": 0.03333333333333333
+        },
+        {
+          "period": "2018-12",
+          "mean_rainfall": 0.17096774193548386
+        },
+        {
+          "period": "2019-01",
+          "mean_rainfall": 0.7064516129032258
+        },
+        {
+          "period": "2019-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-03",
+          "mean_rainfall": 1.2258064516129032
+        },
+        {
+          "period": "2019-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-06",
+          "mean_rainfall": 13.693333333333333
+        },
+        {
+          "period": "2019-07",
+          "mean_rainfall": 17.58064516129032
+        },
+        {
+          "period": "2019-08",
+          "mean_rainfall": 20.232258064516127
+        },
+        {
+          "period": "2019-09",
+          "mean_rainfall": 14.393333333333333
+        },
+        {
+          "period": "2019-10",
+          "mean_rainfall": 0.06451612903225806
+        },
+        {
+          "period": "2019-11",
+          "mean_rainfall": 0.75
+        },
+        {
+          "period": "2019-12",
+          "mean_rainfall": 0.17419354838709677
+        },
+        {
+          "period": "2020-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-06",
+          "mean_rainfall": 11.696666666666664
+        },
+        {
+          "period": "2020-07",
+          "mean_rainfall": 27.258064516129032
+        },
+        {
+          "period": "2020-08",
+          "mean_rainfall": 18.99677419354839
+        },
+        {
+          "period": "2020-09",
+          "mean_rainfall": 13.783333333333333
+        },
+        {
+          "period": "2020-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-11",
+          "mean_rainfall": 0.2866666666666667
+        },
+        {
+          "period": "2020-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-02",
+          "mean_rainfall": 0.5857142857142856
+        },
+        {
+          "period": "2021-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-04",
+          "mean_rainfall": 0.33666666666666667
+        },
+        {
+          "period": "2021-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-06",
+          "mean_rainfall": 18.35
+        },
+        {
+          "period": "2021-07",
+          "mean_rainfall": 31.003225806451614
+        },
+        {
+          "period": "2021-08",
+          "mean_rainfall": 20.26129032258065
+        },
+        {
+          "period": "2021-09",
+          "mean_rainfall": 15.273333333333333
+        },
+        {
+          "period": "2021-10",
+          "mean_rainfall": 2.435483870967742
+        },
+        {
+          "period": "2021-11",
+          "mean_rainfall": 0.8
+        },
+        {
+          "period": "2021-12",
+          "mean_rainfall": 0.6451612903225806
+        },
+        {
+          "period": "2022-01",
+          "mean_rainfall": 0.3806451612903226
+        },
+        {
+          "period": "2022-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-03",
+          "mean_rainfall": 0.535483870967742
+        },
+        {
+          "period": "2022-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-06",
+          "mean_rainfall": 26.14
+        },
+        {
+          "period": "2022-07",
+          "mean_rainfall": 16.954838709677418
+        },
+        {
+          "period": "2022-08",
+          "mean_rainfall": 24.26774193548387
+        },
+        {
+          "period": "2022-09",
+          "mean_rainfall": 21.613333333333333
+        },
+        {
+          "period": "2022-10",
+          "mean_rainfall": 0.6161290322580646
+        },
+        {
+          "period": "2022-11",
+          "mean_rainfall": 0.83
+        },
+        {
+          "period": "2022-12",
+          "mean_rainfall": 0.0
+        }
+      ],
+      "Lucknow": [
+        {
+          "period": "2015-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-03",
+          "mean_rainfall": 0.08709677419354839
+        },
+        {
+          "period": "2015-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-06",
+          "mean_rainfall": 3.126666666666667
+        },
+        {
+          "period": "2015-07",
+          "mean_rainfall": 2.835483870967742
+        },
+        {
+          "period": "2015-08",
+          "mean_rainfall": 2.8225806451612905
+        },
+        {
+          "period": "2015-09",
+          "mean_rainfall": 2.8566666666666665
+        },
+        {
+          "period": "2015-10",
+          "mean_rainfall": 0.29354838709677417
+        },
+        {
+          "period": "2015-11",
+          "mean_rainfall": 0.12333333333333334
+        },
+        {
+          "period": "2015-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-01",
+          "mean_rainfall": 0.44516129032258067
+        },
+        {
+          "period": "2016-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-03",
+          "mean_rainfall": 0.2838709677419355
+        },
+        {
+          "period": "2016-04",
+          "mean_rainfall": 0.7166666666666667
+        },
+        {
+          "period": "2016-05",
+          "mean_rainfall": 0.11935483870967742
+        },
+        {
+          "period": "2016-06",
+          "mean_rainfall": 5.46
+        },
+        {
+          "period": "2016-07",
+          "mean_rainfall": 0.4774193548387097
+        },
+        {
+          "period": "2016-08",
+          "mean_rainfall": 3.948387096774194
+        },
+        {
+          "period": "2016-09",
+          "mean_rainfall": 6.37
+        },
+        {
+          "period": "2016-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-02",
+          "mean_rainfall": 0.4785714285714286
+        },
+        {
+          "period": "2017-03",
+          "mean_rainfall": 0.22580645161290322
+        },
+        {
+          "period": "2017-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-06",
+          "mean_rainfall": 3.8666666666666667
+        },
+        {
+          "period": "2017-07",
+          "mean_rainfall": 2.3322580645161293
+        },
+        {
+          "period": "2017-08",
+          "mean_rainfall": 6.093548387096774
+        },
+        {
+          "period": "2017-09",
+          "mean_rainfall": 1.6766666666666665
+        },
+        {
+          "period": "2017-10",
+          "mean_rainfall": 0.6161290322580646
+        },
+        {
+          "period": "2017-11",
+          "mean_rainfall": 1.0266666666666666
+        },
+        {
+          "period": "2017-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-03",
+          "mean_rainfall": 0.02903225806451613
+        },
+        {
+          "period": "2018-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-06",
+          "mean_rainfall": 3.5833333333333335
+        },
+        {
+          "period": "2018-07",
+          "mean_rainfall": 5.0516129032258075
+        },
+        {
+          "period": "2018-08",
+          "mean_rainfall": 7.267741935483872
+        },
+        {
+          "period": "2018-09",
+          "mean_rainfall": 6.366666666666666
+        },
+        {
+          "period": "2018-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-11",
+          "mean_rainfall": 0.35
+        },
+        {
+          "period": "2018-12",
+          "mean_rainfall": 0.2064516129032258
+        },
+        {
+          "period": "2019-01",
+          "mean_rainfall": 0.45161290322580644
+        },
+        {
+          "period": "2019-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-05",
+          "mean_rainfall": 0.05806451612903226
+        },
+        {
+          "period": "2019-06",
+          "mean_rainfall": 6.3
+        },
+        {
+          "period": "2019-07",
+          "mean_rainfall": 3.551612903225806
+        },
+        {
+          "period": "2019-08",
+          "mean_rainfall": 1.6322580645161289
+        },
+        {
+          "period": "2019-09",
+          "mean_rainfall": 1.4600000000000002
+        },
+        {
+          "period": "2019-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-11",
+          "mean_rainfall": 0.9633333333333333
+        },
+        {
+          "period": "2019-12",
+          "mean_rainfall": 0.45161290322580644
+        },
+        {
+          "period": "2020-01",
+          "mean_rainfall": 0.3290322580645161
+        },
+        {
+          "period": "2020-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-03",
+          "mean_rainfall": 0.16129032258064516
+        },
+        {
+          "period": "2020-04",
+          "mean_rainfall": 0.09000000000000001
+        },
+        {
+          "period": "2020-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-06",
+          "mean_rainfall": 3.6166666666666667
+        },
+        {
+          "period": "2020-07",
+          "mean_rainfall": 9.261290322580646
+        },
+        {
+          "period": "2020-08",
+          "mean_rainfall": 5.251612903225807
+        },
+        {
+          "period": "2020-09",
+          "mean_rainfall": 1.41
+        },
+        {
+          "period": "2020-10",
+          "mean_rainfall": 0.9516129032258065
+        },
+        {
+          "period": "2020-11",
+          "mean_rainfall": 0.5
+        },
+        {
+          "period": "2020-12",
+          "mean_rainfall": 0.06774193548387097
+        },
+        {
+          "period": "2021-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-03",
+          "mean_rainfall": 0.8774193548387097
+        },
+        {
+          "period": "2021-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-06",
+          "mean_rainfall": 5.550000000000001
+        },
+        {
+          "period": "2021-07",
+          "mean_rainfall": 7.4709677419354845
+        },
+        {
+          "period": "2021-08",
+          "mean_rainfall": 4.758064516129032
+        },
+        {
+          "period": "2021-09",
+          "mean_rainfall": 5.556666666666667
+        },
+        {
+          "period": "2021-10",
+          "mean_rainfall": 0.3096774193548387
+        },
+        {
+          "period": "2021-11",
+          "mean_rainfall": 0.9233333333333333
+        },
+        {
+          "period": "2021-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-02",
+          "mean_rainfall": 0.1464285714285714
+        },
+        {
+          "period": "2022-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-05",
+          "mean_rainfall": 0.1903225806451613
+        },
+        {
+          "period": "2022-06",
+          "mean_rainfall": 2.993333333333333
+        },
+        {
+          "period": "2022-07",
+          "mean_rainfall": 3.0580645161290327
+        },
+        {
+          "period": "2022-08",
+          "mean_rainfall": 10.274193548387096
+        },
+        {
+          "period": "2022-09",
+          "mean_rainfall": 5.3100000000000005
+        },
+        {
+          "period": "2022-10",
+          "mean_rainfall": 0.632258064516129
+        },
+        {
+          "period": "2022-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-12",
+          "mean_rainfall": 0.3096774193548387
+        }
+      ],
+      "Mumbai": [
+        {
+          "period": "2015-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-04",
+          "mean_rainfall": 0.030000000000000002
+        },
+        {
+          "period": "2015-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-06",
+          "mean_rainfall": 36.516666666666666
+        },
+        {
+          "period": "2015-07",
+          "mean_rainfall": 25.554838709677416
+        },
+        {
+          "period": "2015-08",
+          "mean_rainfall": 14.070967741935485
+        },
+        {
+          "period": "2015-09",
+          "mean_rainfall": 41.190000000000005
+        },
+        {
+          "period": "2015-10",
+          "mean_rainfall": 0.5967741935483871
+        },
+        {
+          "period": "2015-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-12",
+          "mean_rainfall": 0.016129032258064516
+        },
+        {
+          "period": "2016-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-04",
+          "mean_rainfall": 0.5633333333333332
+        },
+        {
+          "period": "2016-05",
+          "mean_rainfall": 0.12580645161290321
+        },
+        {
+          "period": "2016-06",
+          "mean_rainfall": 30.569999999999997
+        },
+        {
+          "period": "2016-07",
+          "mean_rainfall": 18.75483870967742
+        },
+        {
+          "period": "2016-08",
+          "mean_rainfall": 18.838709677419356
+        },
+        {
+          "period": "2016-09",
+          "mean_rainfall": 20.453333333333333
+        },
+        {
+          "period": "2016-10",
+          "mean_rainfall": 0.08387096774193549
+        },
+        {
+          "period": "2016-11",
+          "mean_rainfall": 0.5333333333333333
+        },
+        {
+          "period": "2016-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-02",
+          "mean_rainfall": 0.4142857142857143
+        },
+        {
+          "period": "2017-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-06",
+          "mean_rainfall": 18.05666666666667
+        },
+        {
+          "period": "2017-07",
+          "mean_rainfall": 34.44193548387097
+        },
+        {
+          "period": "2017-08",
+          "mean_rainfall": 29.483870967741932
+        },
+        {
+          "period": "2017-09",
+          "mean_rainfall": 31.14
+        },
+        {
+          "period": "2017-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-11",
+          "mean_rainfall": 1.7833333333333334
+        },
+        {
+          "period": "2017-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-01",
+          "mean_rainfall": 0.8612903225806451
+        },
+        {
+          "period": "2018-02",
+          "mean_rainfall": 1.2142857142857142
+        },
+        {
+          "period": "2018-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-04",
+          "mean_rainfall": 0.5766666666666667
+        },
+        {
+          "period": "2018-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-06",
+          "mean_rainfall": 20.68333333333333
+        },
+        {
+          "period": "2018-07",
+          "mean_rainfall": 22.825806451612902
+        },
+        {
+          "period": "2018-08",
+          "mean_rainfall": 17.700000000000003
+        },
+        {
+          "period": "2018-09",
+          "mean_rainfall": 15.876666666666665
+        },
+        {
+          "period": "2018-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-11",
+          "mean_rainfall": 3.9699999999999998
+        },
+        {
+          "period": "2018-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-01",
+          "mean_rainfall": 0.996774193548387
+        },
+        {
+          "period": "2019-02",
+          "mean_rainfall": 0.5357142857142857
+        },
+        {
+          "period": "2019-03",
+          "mean_rainfall": 0.34838709677419355
+        },
+        {
+          "period": "2019-04",
+          "mean_rainfall": 0.6966666666666667
+        },
+        {
+          "period": "2019-05",
+          "mean_rainfall": 0.432258064516129
+        },
+        {
+          "period": "2019-06",
+          "mean_rainfall": 15.98
+        },
+        {
+          "period": "2019-07",
+          "mean_rainfall": 20.26451612903226
+        },
+        {
+          "period": "2019-08",
+          "mean_rainfall": 25.483870967741932
+        },
+        {
+          "period": "2019-09",
+          "mean_rainfall": 24.94
+        },
+        {
+          "period": "2019-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-11",
+          "mean_rainfall": 2.3466666666666667
+        },
+        {
+          "period": "2019-12",
+          "mean_rainfall": 0.3870967741935484
+        },
+        {
+          "period": "2020-01",
+          "mean_rainfall": 1.1
+        },
+        {
+          "period": "2020-02",
+          "mean_rainfall": 0.606896551724138
+        },
+        {
+          "period": "2020-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-04",
+          "mean_rainfall": 1.1866666666666668
+        },
+        {
+          "period": "2020-05",
+          "mean_rainfall": 0.0032258064516129032
+        },
+        {
+          "period": "2020-06",
+          "mean_rainfall": 28.14333333333333
+        },
+        {
+          "period": "2020-07",
+          "mean_rainfall": 28.0
+        },
+        {
+          "period": "2020-08",
+          "mean_rainfall": 9.248387096774191
+        },
+        {
+          "period": "2020-09",
+          "mean_rainfall": 23.36333333333333
+        },
+        {
+          "period": "2020-10",
+          "mean_rainfall": 0.25806451612903225
+        },
+        {
+          "period": "2020-11",
+          "mean_rainfall": 2.1966666666666668
+        },
+        {
+          "period": "2020-12",
+          "mean_rainfall": 0.8451612903225806
+        },
+        {
+          "period": "2021-01",
+          "mean_rainfall": 0.49032258064516127
+        },
+        {
+          "period": "2021-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-06",
+          "mean_rainfall": 22.52
+        },
+        {
+          "period": "2021-07",
+          "mean_rainfall": 24.374193548387094
+        },
+        {
+          "period": "2021-08",
+          "mean_rainfall": 29.200000000000003
+        },
+        {
+          "period": "2021-09",
+          "mean_rainfall": 27.40666666666667
+        },
+        {
+          "period": "2021-10",
+          "mean_rainfall": 2.083870967741935
+        },
+        {
+          "period": "2021-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-03",
+          "mean_rainfall": 0.12903225806451613
+        },
+        {
+          "period": "2022-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-06",
+          "mean_rainfall": 28.566666666666666
+        },
+        {
+          "period": "2022-07",
+          "mean_rainfall": 10.622580645161289
+        },
+        {
+          "period": "2022-08",
+          "mean_rainfall": 18.967741935483875
+        },
+        {
+          "period": "2022-09",
+          "mean_rainfall": 28.20333333333333
+        },
+        {
+          "period": "2022-10",
+          "mean_rainfall": 1.8580645161290323
+        },
+        {
+          "period": "2022-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-12",
+          "mean_rainfall": 0.0
+        }
+      ],
+      "Pune": [
+        {
+          "period": "2015-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-04",
+          "mean_rainfall": 0.66
+        },
+        {
+          "period": "2015-05",
+          "mean_rainfall": 0.48709677419354835
+        },
+        {
+          "period": "2015-06",
+          "mean_rainfall": 4.383333333333334
+        },
+        {
+          "period": "2015-07",
+          "mean_rainfall": 10.009677419354839
+        },
+        {
+          "period": "2015-08",
+          "mean_rainfall": 8.229032258064516
+        },
+        {
+          "period": "2015-09",
+          "mean_rainfall": 3.62
+        },
+        {
+          "period": "2015-10",
+          "mean_rainfall": 0.4483870967741936
+        },
+        {
+          "period": "2015-11",
+          "mean_rainfall": 0.10333333333333333
+        },
+        {
+          "period": "2015-12",
+          "mean_rainfall": 0.06774193548387097
+        },
+        {
+          "period": "2016-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-04",
+          "mean_rainfall": 0.3
+        },
+        {
+          "period": "2016-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-06",
+          "mean_rainfall": 5.906666666666668
+        },
+        {
+          "period": "2016-07",
+          "mean_rainfall": 3.325806451612903
+        },
+        {
+          "period": "2016-08",
+          "mean_rainfall": 4.62258064516129
+        },
+        {
+          "period": "2016-09",
+          "mean_rainfall": 9.173333333333334
+        },
+        {
+          "period": "2016-10",
+          "mean_rainfall": 1.103225806451613
+        },
+        {
+          "period": "2016-11",
+          "mean_rainfall": 0.22
+        },
+        {
+          "period": "2016-12",
+          "mean_rainfall": 0.37741935483870964
+        },
+        {
+          "period": "2017-01",
+          "mean_rainfall": 0.08709677419354839
+        },
+        {
+          "period": "2017-02",
+          "mean_rainfall": 0.2571428571428572
+        },
+        {
+          "period": "2017-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-06",
+          "mean_rainfall": 6.073333333333333
+        },
+        {
+          "period": "2017-07",
+          "mean_rainfall": 6.183870967741935
+        },
+        {
+          "period": "2017-08",
+          "mean_rainfall": 6.890322580645161
+        },
+        {
+          "period": "2017-09",
+          "mean_rainfall": 3.9533333333333336
+        },
+        {
+          "period": "2017-10",
+          "mean_rainfall": 0.4258064516129032
+        },
+        {
+          "period": "2017-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-12",
+          "mean_rainfall": 0.1
+        },
+        {
+          "period": "2018-01",
+          "mean_rainfall": 0.8903225806451613
+        },
+        {
+          "period": "2018-02",
+          "mean_rainfall": 0.3392857142857143
+        },
+        {
+          "period": "2018-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-04",
+          "mean_rainfall": 0.31666666666666665
+        },
+        {
+          "period": "2018-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-06",
+          "mean_rainfall": 9.823333333333334
+        },
+        {
+          "period": "2018-07",
+          "mean_rainfall": 2.535483870967742
+        },
+        {
+          "period": "2018-08",
+          "mean_rainfall": 6.529032258064516
+        },
+        {
+          "period": "2018-09",
+          "mean_rainfall": 2.566666666666667
+        },
+        {
+          "period": "2018-10",
+          "mean_rainfall": 0.7838709677419355
+        },
+        {
+          "period": "2018-11",
+          "mean_rainfall": 0.09666666666666666
+        },
+        {
+          "period": "2018-12",
+          "mean_rainfall": 0.432258064516129
+        },
+        {
+          "period": "2019-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-03",
+          "mean_rainfall": 0.06129032258064516
+        },
+        {
+          "period": "2019-04",
+          "mean_rainfall": 0.030000000000000002
+        },
+        {
+          "period": "2019-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-06",
+          "mean_rainfall": 5.173333333333333
+        },
+        {
+          "period": "2019-07",
+          "mean_rainfall": 5.732258064516128
+        },
+        {
+          "period": "2019-08",
+          "mean_rainfall": 1.6096774193548387
+        },
+        {
+          "period": "2019-09",
+          "mean_rainfall": 1.8099999999999998
+        },
+        {
+          "period": "2019-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-11",
+          "mean_rainfall": 1.32
+        },
+        {
+          "period": "2019-12",
+          "mean_rainfall": 0.4096774193548387
+        },
+        {
+          "period": "2020-01",
+          "mean_rainfall": 0.19677419354838707
+        },
+        {
+          "period": "2020-02",
+          "mean_rainfall": 0.3724137931034483
+        },
+        {
+          "period": "2020-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-05",
+          "mean_rainfall": 0.1903225806451613
+        },
+        {
+          "period": "2020-06",
+          "mean_rainfall": 8.176666666666666
+        },
+        {
+          "period": "2020-07",
+          "mean_rainfall": 4.687096774193548
+        },
+        {
+          "period": "2020-08",
+          "mean_rainfall": 6.699999999999999
+        },
+        {
+          "period": "2020-09",
+          "mean_rainfall": 6.67
+        },
+        {
+          "period": "2020-10",
+          "mean_rainfall": 0.25483870967741934
+        },
+        {
+          "period": "2020-11",
+          "mean_rainfall": 1.5566666666666664
+        },
+        {
+          "period": "2020-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-02",
+          "mean_rainfall": 0.028571428571428574
+        },
+        {
+          "period": "2021-03",
+          "mean_rainfall": 0.264516129032258
+        },
+        {
+          "period": "2021-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-05",
+          "mean_rainfall": 0.08064516129032258
+        },
+        {
+          "period": "2021-06",
+          "mean_rainfall": 7.959999999999999
+        },
+        {
+          "period": "2021-07",
+          "mean_rainfall": 3.051612903225806
+        },
+        {
+          "period": "2021-08",
+          "mean_rainfall": 5.803225806451613
+        },
+        {
+          "period": "2021-09",
+          "mean_rainfall": 1.9766666666666668
+        },
+        {
+          "period": "2021-10",
+          "mean_rainfall": 0.04516129032258064
+        },
+        {
+          "period": "2021-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-12",
+          "mean_rainfall": 0.49032258064516127
+        },
+        {
+          "period": "2022-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-02",
+          "mean_rainfall": 0.45
+        },
+        {
+          "period": "2022-03",
+          "mean_rainfall": 0.3838709677419355
+        },
+        {
+          "period": "2022-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-06",
+          "mean_rainfall": 4.4366666666666665
+        },
+        {
+          "period": "2022-07",
+          "mean_rainfall": 3.7580645161290325
+        },
+        {
+          "period": "2022-08",
+          "mean_rainfall": 6.312903225806451
+        },
+        {
+          "period": "2022-09",
+          "mean_rainfall": 4.056666666666667
+        },
+        {
+          "period": "2022-10",
+          "mean_rainfall": 0.09032258064516129
+        },
+        {
+          "period": "2022-11",
+          "mean_rainfall": 0.11
+        },
+        {
+          "period": "2022-12",
+          "mean_rainfall": 0.0
+        }
+      ],
+      "Visakhapatnam": [
+        {
+          "period": "2015-01",
+          "mean_rainfall": 0.31612903225806455
+        },
+        {
+          "period": "2015-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-03",
+          "mean_rainfall": 1.1258064516129034
+        },
+        {
+          "period": "2015-04",
+          "mean_rainfall": 0.03333333333333333
+        },
+        {
+          "period": "2015-05",
+          "mean_rainfall": 0.6741935483870968
+        },
+        {
+          "period": "2015-06",
+          "mean_rainfall": 12.583333333333334
+        },
+        {
+          "period": "2015-07",
+          "mean_rainfall": 13.848387096774195
+        },
+        {
+          "period": "2015-08",
+          "mean_rainfall": 21.245161290322578
+        },
+        {
+          "period": "2015-09",
+          "mean_rainfall": 9.566666666666666
+        },
+        {
+          "period": "2015-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2015-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2016-05",
+          "mean_rainfall": 0.8064516129032258
+        },
+        {
+          "period": "2016-06",
+          "mean_rainfall": 8.493333333333334
+        },
+        {
+          "period": "2016-07",
+          "mean_rainfall": 8.022580645161291
+        },
+        {
+          "period": "2016-08",
+          "mean_rainfall": 5.909677419354839
+        },
+        {
+          "period": "2016-09",
+          "mean_rainfall": 14.870000000000001
+        },
+        {
+          "period": "2016-10",
+          "mean_rainfall": 1.4870967741935484
+        },
+        {
+          "period": "2016-11",
+          "mean_rainfall": 0.7266666666666667
+        },
+        {
+          "period": "2016-12",
+          "mean_rainfall": 0.37741935483870964
+        },
+        {
+          "period": "2017-01",
+          "mean_rainfall": 0.7580645161290323
+        },
+        {
+          "period": "2017-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-05",
+          "mean_rainfall": 0.8483870967741935
+        },
+        {
+          "period": "2017-06",
+          "mean_rainfall": 11.503333333333334
+        },
+        {
+          "period": "2017-07",
+          "mean_rainfall": 10.206451612903226
+        },
+        {
+          "period": "2017-08",
+          "mean_rainfall": 11.454838709677421
+        },
+        {
+          "period": "2017-09",
+          "mean_rainfall": 19.730000000000008
+        },
+        {
+          "period": "2017-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2017-11",
+          "mean_rainfall": 0.8533333333333334
+        },
+        {
+          "period": "2017-12",
+          "mean_rainfall": 0.4967741935483871
+        },
+        {
+          "period": "2018-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-06",
+          "mean_rainfall": 15.706666666666669
+        },
+        {
+          "period": "2018-07",
+          "mean_rainfall": 9.980645161290322
+        },
+        {
+          "period": "2018-08",
+          "mean_rainfall": 7.506451612903225
+        },
+        {
+          "period": "2018-09",
+          "mean_rainfall": 16.216666666666665
+        },
+        {
+          "period": "2018-10",
+          "mean_rainfall": 0.5580645161290323
+        },
+        {
+          "period": "2018-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2018-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-01",
+          "mean_rainfall": 0.667741935483871
+        },
+        {
+          "period": "2019-02",
+          "mean_rainfall": 1.1392857142857142
+        },
+        {
+          "period": "2019-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-06",
+          "mean_rainfall": 13.000000000000002
+        },
+        {
+          "period": "2019-07",
+          "mean_rainfall": 12.129032258064514
+        },
+        {
+          "period": "2019-08",
+          "mean_rainfall": 11.835483870967742
+        },
+        {
+          "period": "2019-09",
+          "mean_rainfall": 15.060000000000002
+        },
+        {
+          "period": "2019-10",
+          "mean_rainfall": 0.5129032258064516
+        },
+        {
+          "period": "2019-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2019-12",
+          "mean_rainfall": 0.3096774193548387
+        },
+        {
+          "period": "2020-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-02",
+          "mean_rainfall": 0.6827586206896551
+        },
+        {
+          "period": "2020-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-05",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-06",
+          "mean_rainfall": 9.34
+        },
+        {
+          "period": "2020-07",
+          "mean_rainfall": 14.10967741935484
+        },
+        {
+          "period": "2020-08",
+          "mean_rainfall": 12.722580645161292
+        },
+        {
+          "period": "2020-09",
+          "mean_rainfall": 17.763333333333332
+        },
+        {
+          "period": "2020-10",
+          "mean_rainfall": 0.9
+        },
+        {
+          "period": "2020-11",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2020-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-01",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-02",
+          "mean_rainfall": 0.6
+        },
+        {
+          "period": "2021-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2021-04",
+          "mean_rainfall": 0.49000000000000005
+        },
+        {
+          "period": "2021-05",
+          "mean_rainfall": 0.9612903225806452
+        },
+        {
+          "period": "2021-06",
+          "mean_rainfall": 13.556666666666668
+        },
+        {
+          "period": "2021-07",
+          "mean_rainfall": 7.503225806451613
+        },
+        {
+          "period": "2021-08",
+          "mean_rainfall": 9.05483870967742
+        },
+        {
+          "period": "2021-09",
+          "mean_rainfall": 11.21
+        },
+        {
+          "period": "2021-10",
+          "mean_rainfall": 0.02903225806451613
+        },
+        {
+          "period": "2021-11",
+          "mean_rainfall": 0.9033333333333334
+        },
+        {
+          "period": "2021-12",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-01",
+          "mean_rainfall": 0.8677419354838709
+        },
+        {
+          "period": "2022-02",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-03",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-04",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-05",
+          "mean_rainfall": 0.23548387096774193
+        },
+        {
+          "period": "2022-06",
+          "mean_rainfall": 12.460000000000003
+        },
+        {
+          "period": "2022-07",
+          "mean_rainfall": 9.541935483870969
+        },
+        {
+          "period": "2022-08",
+          "mean_rainfall": 4.622580645161291
+        },
+        {
+          "period": "2022-09",
+          "mean_rainfall": 13.899999999999999
+        },
+        {
+          "period": "2022-10",
+          "mean_rainfall": 0.0
+        },
+        {
+          "period": "2022-11",
+          "mean_rainfall": 0.14333333333333334
+        },
+        {
+          "period": "2022-12",
+          "mean_rainfall": 0.0
+        }
+      ]
+    },
+    "by_location": [
+      {
+        "location": "Bengaluru",
+        "mean_rainfall": 1.431211498973306,
+        "max_rainfall": 75.9
+      },
+      {
+        "location": "Chennai",
+        "mean_rainfall": 3.1882956878850104,
+        "max_rainfall": 151.0
+      },
+      {
+        "location": "Delhi",
+        "mean_rainfall": 0.5841889117043121,
+        "max_rainfall": 57.4
+      },
+      {
+        "location": "Guwahati",
+        "mean_rainfall": 7.6956194387405885,
+        "max_rainfall": 165.5
+      },
+      {
+        "location": "Hyderabad",
+        "mean_rainfall": 2.1740930869267627,
+        "max_rainfall": 87.7
+      },
+      {
+        "location": "Jaipur",
+        "mean_rainfall": 0.4194729637234771,
+        "max_rainfall": 45.1
+      },
+      {
+        "location": "Kochi",
+        "mean_rainfall": 9.09312114989733,
+        "max_rainfall": 196.6
+      },
+      {
+        "location": "Kolkata",
+        "mean_rainfall": 6.4287816563997255,
+        "max_rainfall": 214.7
+      },
+      {
+        "location": "Lucknow",
+        "mean_rainfall": 1.6092060232717318,
+        "max_rainfall": 86.2
+      },
+      {
+        "location": "Mumbai",
+        "mean_rainfall": 8.218651608487338,
+        "max_rainfall": 226.7
+      },
+      {
+        "location": "Pune",
+        "mean_rainfall": 1.9364476386036962,
+        "max_rainfall": 84.6
+      },
+      {
+        "location": "Visakhapatnam",
+        "mean_rainfall": 4.189664613278576,
+        "max_rainfall": 130.9
+      }
+    ],
+    "risk_distribution": {
+      "normal": 32246,
+      "moderate": 2374,
+      "high": 444,
+      "basis": "historical observations classified by rainfall thresholds"
+    },
+    "actual_vs_predicted": {
+      "split": "test (chronological hold-out, daily mean over locations)",
+      "points": [
+        {
+          "date": "2022-01-01",
+          "actual": 0.0,
+          "predicted": 0.1941276101083503
+        },
+        {
+          "date": "2022-01-02",
+          "actual": 0.325,
+          "predicted": 0.169714990077
+        },
+        {
+          "date": "2022-01-03",
+          "actual": 0.625,
+          "predicted": 0.22109378913910752
+        },
+        {
+          "date": "2022-01-04",
+          "actual": 0.0,
+          "predicted": 0.2176795279975573
+        },
+        {
+          "date": "2022-01-05",
+          "actual": 0.0,
+          "predicted": 0.33023707746032516
+        },
+        {
+          "date": "2022-01-06",
+          "actual": 0.0,
+          "predicted": 0.34435981590503545
+        },
+        {
+          "date": "2022-01-07",
+          "actual": 0.0,
+          "predicted": 0.25490011587826833
+        },
+        {
+          "date": "2022-01-08",
+          "actual": 0.0,
+          "predicted": 0.24350160965877735
+        },
+        {
+          "date": "2022-01-09",
+          "actual": 0.0,
+          "predicted": 0.20070545283466332
+        },
+        {
+          "date": "2022-01-10",
+          "actual": 0.0,
+          "predicted": 0.18617376667899777
+        },
+        {
+          "date": "2022-01-11",
+          "actual": 0.0,
+          "predicted": 0.17114170683456142
+        },
+        {
+          "date": "2022-01-12",
+          "actual": 1.9749999999999999,
+          "predicted": 0.24734958211481514
+        },
+        {
+          "date": "2022-01-13",
+          "actual": 0.9833333333333334,
+          "predicted": 0.22826309848652968
+        },
+        {
+          "date": "2022-01-14",
+          "actual": 0.0,
+          "predicted": 0.9681834416346975
+        },
+        {
+          "date": "2022-01-15",
+          "actual": 0.0,
+          "predicted": 0.374846510782647
+        },
+        {
+          "date": "2022-01-16",
+          "actual": 0.0,
+          "predicted": 0.3267664072934785
+        },
+        {
+          "date": "2022-01-17",
+          "actual": 0.0,
+          "predicted": 0.26280704732621346
+        },
+        {
+          "date": "2022-01-18",
+          "actual": 0.0,
+          "predicted": 0.17243793101911045
+        },
+        {
+          "date": "2022-01-19",
+          "actual": 0.0,
+          "predicted": 0.37427273732678096
+        },
+        {
+          "date": "2022-01-20",
+          "actual": 1.0333333333333334,
+          "predicted": 0.20456603142888344
+        },
+        {
+          "date": "2022-01-21",
+          "actual": 0.0,
+          "predicted": 0.22220070509625137
+        },
+        {
+          "date": "2022-01-22",
+          "actual": 0.0,
+          "predicted": 0.20041699382976955
+        },
+        {
+          "date": "2022-01-23",
+          "actual": 0.0,
+          "predicted": 0.14897899586078897
+        },
+        {
+          "date": "2022-01-24",
+          "actual": 0.0,
+          "predicted": 0.15987283655776843
+        },
+        {
+          "date": "2022-01-25",
+          "actual": 1.6166666666666665,
+          "predicted": 0.15394081875249094
+        },
+        {
+          "date": "2022-01-26",
+          "actual": 0.0,
+          "predicted": 0.1606977376696758
+        },
+        {
+          "date": "2022-01-27",
+          "actual": 0.0,
+          "predicted": 0.1662999903324942
+        },
+        {
+          "date": "2022-01-28",
+          "actual": 0.0,
+          "predicted": 0.2279918038642532
+        },
+        {
+          "date": "2022-01-29",
+          "actual": 0.0,
+          "predicted": 0.2989047669817036
+        },
+        {
+          "date": "2022-01-30",
+          "actual": 0.0,
+          "predicted": 0.2526118295865573
+        },
+        {
+          "date": "2022-01-31",
+          "actual": 1.3916666666666666,
+          "predicted": 0.12712247272397267
+        },
+        {
+          "date": "2022-02-01",
+          "actual": 0.0,
+          "predicted": 0.24515959520404484
+        },
+        {
+          "date": "2022-02-02",
+          "actual": 3.9250000000000003,
+          "predicted": 0.2675847612253043
+        },
+        {
+          "date": "2022-02-03",
+          "actual": 0.0,
+          "predicted": 0.3053223581646836
+        },
+        {
+          "date": "2022-02-04",
+          "actual": 0.0,
+          "predicted": 0.15863793473406973
+        },
+        {
+          "date": "2022-02-05",
+          "actual": 0.0,
+          "predicted": 0.14598949784272988
+        },
+        {
+          "date": "2022-02-06",
+          "actual": 0.0,
+          "predicted": 0.20926282447311065
+        },
+        {
+          "date": "2022-02-07",
+          "actual": 0.3416666666666666,
+          "predicted": 0.2021781227712228
+        },
+        {
+          "date": "2022-02-08",
+          "actual": 0.0,
+          "predicted": 0.17475208249784216
+        },
+        {
+          "date": "2022-02-09",
+          "actual": 0.0,
+          "predicted": 0.21274332527933337
+        },
+        {
+          "date": "2022-02-10",
+          "actual": 0.0,
+          "predicted": 0.22115491406089807
+        },
+        {
+          "date": "2022-02-11",
+          "actual": 0.0,
+          "predicted": 0.25758451322029574
+        },
+        {
+          "date": "2022-02-12",
+          "actual": 0.0,
+          "predicted": 0.22005423912217445
+        },
+        {
+          "date": "2022-02-13",
+          "actual": 0.0,
+          "predicted": 0.12115575131545098
+        },
+        {
+          "date": "2022-02-14",
+          "actual": 0.0,
+          "predicted": 0.1939359677832363
+        },
+        {
+          "date": "2022-02-15",
+          "actual": 0.0,
+          "predicted": 0.2206828966168228
+        },
+        {
+          "date": "2022-02-16",
+          "actual": 0.0,
+          "predicted": 0.2056635299888603
+        },
+        {
+          "date": "2022-02-17",
+          "actual": 0.0,
+          "predicted": 0.3137162984301413
+        },
+        {
+          "date": "2022-02-18",
+          "actual": 0.0,
+          "predicted": 0.4230720559514371
+        },
+        {
+          "date": "2022-02-19",
+          "actual": 2.0083333333333333,
+          "predicted": 0.28006464164913086
+        },
+        {
+          "date": "2022-02-20",
+          "actual": 0.325,
+          "predicted": 0.1420877136600216
+        },
+        {
+          "date": "2022-02-21",
+          "actual": 0.0,
+          "predicted": 0.39662901994304933
+        },
+        {
+          "date": "2022-02-22",
+          "actual": 0.0,
+          "predicted": 0.17468526667979456
+        },
+        {
+          "date": "2022-02-23",
+          "actual": 0.0,
+          "predicted": 0.18198143474063633
+        },
+        {
+          "date": "2022-02-24",
+          "actual": 0.0,
+          "predicted": 0.14597761598710093
+        },
+        {
+          "date": "2022-02-25",
+          "actual": 0.0,
+          "predicted": 1.3492830549218562
+        },
+        {
+          "date": "2022-02-26",
+          "actual": 0.09166666666666667,
+          "predicted": 0.5210016776810332
+        },
+        {
+          "date": "2022-02-27",
+          "actual": 0.0,
+          "predicted": 0.5860653334967719
+        },
+        {
+          "date": "2022-02-28",
+          "actual": 0.0,
+          "predicted": 0.19828817177677896
+        },
+        {
+          "date": "2022-03-01",
+          "actual": 0.0,
+          "predicted": 0.2585159170953706
+        },
+        {
+          "date": "2022-03-02",
+          "actual": 0.0,
+          "predicted": 0.4804980708827769
+        },
+        {
+          "date": "2022-03-03",
+          "actual": 1.3833333333333335,
+          "predicted": 0.2358686538609743
+        },
+        {
+          "date": "2022-03-04",
+          "actual": 0.0,
+          "predicted": 0.25041315895348754
+        },
+        {
+          "date": "2022-03-05",
+          "actual": 0.9416666666666668,
+          "predicted": 0.23934917171380632
+        },
+        {
+          "date": "2022-03-06",
+          "actual": 0.0,
+          "predicted": 0.20808297042096158
+        },
+        {
+          "date": "2022-03-07",
+          "actual": 0.0,
+          "predicted": 0.21408948738830982
+        },
+        {
+          "date": "2022-03-08",
+          "actual": 0.0,
+          "predicted": 0.24182916251245304
+        },
+        {
+          "date": "2022-03-09",
+          "actual": 0.3333333333333333,
+          "predicted": 0.40483562020398306
+        },
+        {
+          "date": "2022-03-10",
+          "actual": 0.0,
+          "predicted": 0.25138476602819243
+        },
+        {
+          "date": "2022-03-11",
+          "actual": 0.0,
+          "predicted": 0.24449791701515447
+        },
+        {
+          "date": "2022-03-12",
+          "actual": 2.625,
+          "predicted": 0.2566922046552872
+        },
+        {
+          "date": "2022-03-13",
+          "actual": 0.0,
+          "predicted": 0.2569311181776739
+        },
+        {
+          "date": "2022-03-14",
+          "actual": 0.0,
+          "predicted": 0.21183752462221905
+        },
+        {
+          "date": "2022-03-15",
+          "actual": 0.0,
+          "predicted": 0.28744825065886864
+        },
+        {
+          "date": "2022-03-16",
+          "actual": 0.0,
+          "predicted": 0.2611236516615818
+        },
+        {
+          "date": "2022-03-17",
+          "actual": 0.0,
+          "predicted": 1.0509386027318257
+        },
+        {
+          "date": "2022-03-18",
+          "actual": 0.0,
+          "predicted": 0.2574525694006285
+        },
+        {
+          "date": "2022-03-19",
+          "actual": 0.0,
+          "predicted": 0.2686576552571219
+        },
+        {
+          "date": "2022-03-20",
+          "actual": 0.0,
+          "predicted": 0.2529245617976907
+        },
+        {
+          "date": "2022-03-21",
+          "actual": 0.39166666666666666,
+          "predicted": 0.21821200080086242
+        },
+        {
+          "date": "2022-03-22",
+          "actual": 0.0,
+          "predicted": 0.47661888817407655
+        },
+        {
+          "date": "2022-03-23",
+          "actual": 0.0,
+          "predicted": 0.22806969262121765
+        },
+        {
+          "date": "2022-03-24",
+          "actual": 0.0,
+          "predicted": 0.5316553979572723
+        },
+        {
+          "date": "2022-03-25",
+          "actual": 0.0,
+          "predicted": 0.3008393203589182
+        },
+        {
+          "date": "2022-03-26",
+          "actual": 0.0,
+          "predicted": 0.2091689027555044
+        },
+        {
+          "date": "2022-03-27",
+          "actual": 0.0,
+          "predicted": 0.261211815567099
+        },
+        {
+          "date": "2022-03-28",
+          "actual": 0.0,
+          "predicted": 0.49768343917460306
+        },
+        {
+          "date": "2022-03-29",
+          "actual": 0.6,
+          "predicted": 0.15785108318600108
+        },
+        {
+          "date": "2022-03-30",
+          "actual": 0.0,
+          "predicted": 0.34022390597832103
+        },
+        {
+          "date": "2022-03-31",
+          "actual": 0.0,
+          "predicted": 0.6019450816621127
+        },
+        {
+          "date": "2022-04-01",
+          "actual": 0.0,
+          "predicted": 0.17712162110809052
+        },
+        {
+          "date": "2022-04-02",
+          "actual": 0.0,
+          "predicted": 0.24846097643714318
+        },
+        {
+          "date": "2022-04-03",
+          "actual": 0.0,
+          "predicted": 0.3059235104707652
+        },
+        {
+          "date": "2022-04-04",
+          "actual": 0.0,
+          "predicted": 0.39779643758291017
+        },
+        {
+          "date": "2022-04-05",
+          "actual": 0.0,
+          "predicted": 0.279479438580171
+        },
+        {
+          "date": "2022-04-06",
+          "actual": 0.0,
+          "predicted": 0.21863184168996594
+        },
+        {
+          "date": "2022-04-07",
+          "actual": 0.0,
+          "predicted": 0.18874868163500982
+        },
+        {
+          "date": "2022-04-08",
+          "actual": 0.0,
+          "predicted": 0.33894986461885884
+        },
+        {
+          "date": "2022-04-09",
+          "actual": 0.0,
+          "predicted": 0.7094580896485515
+        },
+        {
+          "date": "2022-04-10",
+          "actual": 0.0,
+          "predicted": 0.24018547285952083
+        },
+        {
+          "date": "2022-04-11",
+          "actual": 0.0,
+          "predicted": 0.1745337257460405
+        },
+        {
+          "date": "2022-04-12",
+          "actual": 0.0,
+          "predicted": 0.19728030521415582
+        },
+        {
+          "date": "2022-04-13",
+          "actual": 0.016666666666666666,
+          "predicted": 0.6666502839352866
+        },
+        {
+          "date": "2022-04-14",
+          "actual": 0.0,
+          "predicted": 0.26832641406443875
+        },
+        {
+          "date": "2022-04-15",
+          "actual": 1.9749999999999999,
+          "predicted": 0.5628253706379156
+        },
+        {
+          "date": "2022-04-16",
+          "actual": 0.0,
+          "predicted": 0.17894602800346696
+        },
+        {
+          "date": "2022-04-17",
+          "actual": 0.0,
+          "predicted": 0.22766890763618286
+        },
+        {
+          "date": "2022-04-18",
+          "actual": 0.0,
+          "predicted": 0.22767579431953067
+        },
+        {
+          "date": "2022-04-19",
+          "actual": 0.075,
+          "predicted": 0.3247736043909207
+        },
+        {
+          "date": "2022-04-20",
+          "actual": 0.0,
+          "predicted": 0.3147919520682635
+        },
+        {
+          "date": "2022-04-21",
+          "actual": 0.0,
+          "predicted": 0.3155660055773224
+        },
+        {
+          "date": "2022-04-22",
+          "actual": 0.425,
+          "predicted": 0.16014058091102884
+        },
+        {
+          "date": "2022-04-23",
+          "actual": 0.0,
+          "predicted": 0.2251828251390282
+        },
+        {
+          "date": "2022-04-24",
+          "actual": 0.9583333333333334,
+          "predicted": 0.2754398558326326
+        },
+        {
+          "date": "2022-04-25",
+          "actual": 0.0,
+          "predicted": 0.5111646024475197
+        },
+        {
+          "date": "2022-04-26",
+          "actual": 0.0,
+          "predicted": 0.24754129181083936
+        },
+        {
+          "date": "2022-04-27",
+          "actual": 0.0,
+          "predicted": 1.325003538064683
+        },
+        {
+          "date": "2022-04-28",
+          "actual": 6.133333333333333,
+          "predicted": 0.6756967411510986
+        },
+        {
+          "date": "2022-04-29",
+          "actual": 0.0,
+          "predicted": 0.40341104816835044
+        },
+        {
+          "date": "2022-04-30",
+          "actual": 0.0,
+          "predicted": 0.46157356722655013
+        },
+        {
+          "date": "2022-05-01",
+          "actual": 0.0,
+          "predicted": 0.2585585013556659
+        },
+        {
+          "date": "2022-05-02",
+          "actual": 0.0,
+          "predicted": 0.5335703374480419
+        },
+        {
+          "date": "2022-05-03",
+          "actual": 0.0,
+          "predicted": 0.35703638518047426
+        },
+        {
+          "date": "2022-05-04",
+          "actual": 0.0,
+          "predicted": 1.2505965146990399
+        },
+        {
+          "date": "2022-05-05",
+          "actual": 1.0999999999999999,
+          "predicted": 0.3508204439556375
+        },
+        {
+          "date": "2022-05-06",
+          "actual": 0.0,
+          "predicted": 0.4547900838241376
+        },
+        {
+          "date": "2022-05-07",
+          "actual": 0.0,
+          "predicted": 0.3124727116259274
+        },
+        {
+          "date": "2022-05-08",
+          "actual": 0.0,
+          "predicted": 0.5347964460436051
+        },
+        {
+          "date": "2022-05-09",
+          "actual": 0.0,
+          "predicted": 0.3109381804514521
+        },
+        {
+          "date": "2022-05-10",
+          "actual": 0.0,
+          "predicted": 0.26299403762839263
+        },
+        {
+          "date": "2022-05-11",
+          "actual": 0.47500000000000003,
+          "predicted": 0.6020728335913454
+        },
+        {
+          "date": "2022-05-12",
+          "actual": 0.0,
+          "predicted": 0.5122615236938374
+        },
+        {
+          "date": "2022-05-13",
+          "actual": 0.0,
+          "predicted": 0.3113333349739631
+        },
+        {
+          "date": "2022-05-14",
+          "actual": 1.175,
+          "predicted": 0.47677767102657787
+        },
+        {
+          "date": "2022-05-15",
+          "actual": 0.0,
+          "predicted": 0.26836702026701004
+        },
+        {
+          "date": "2022-05-16",
+          "actual": 0.0,
+          "predicted": 0.3951864666934158
+        },
+        {
+          "date": "2022-05-17",
+          "actual": 0.21666666666666667,
+          "predicted": 0.5877601799846439
+        },
+        {
+          "date": "2022-05-18",
+          "actual": 0.0,
+          "predicted": 0.7516404021270952
+        },
+        {
+          "date": "2022-05-19",
+          "actual": 0.0,
+          "predicted": 0.3823171672821218
+        },
+        {
+          "date": "2022-05-20",
+          "actual": 0.0,
+          "predicted": 0.2802485119000098
+        },
+        {
+          "date": "2022-05-21",
+          "actual": 0.0,
+          "predicted": 0.2737047759218444
+        },
+        {
+          "date": "2022-05-22",
+          "actual": 0.0,
+          "predicted": 0.42692179085955817
+        },
+        {
+          "date": "2022-05-23",
+          "actual": 0.0,
+          "predicted": 0.37530992102102223
+        },
+        {
+          "date": "2022-05-24",
+          "actual": 0.0,
+          "predicted": 0.4586459328628476
+        },
+        {
+          "date": "2022-05-25",
+          "actual": 0.0,
+          "predicted": 0.31591674471909115
+        },
+        {
+          "date": "2022-05-26",
+          "actual": 0.0,
+          "predicted": 0.41952271752991366
+        },
+        {
+          "date": "2022-05-27",
+          "actual": 0.65,
+          "predicted": 0.57544793498338
+        },
+        {
+          "date": "2022-05-28",
+          "actual": 0.0,
+          "predicted": 0.30526785620316155
+        },
+        {
+          "date": "2022-05-29",
+          "actual": 0.0,
+          "predicted": 0.3441943571453067
+        },
+        {
+          "date": "2022-05-30",
+          "actual": 0.0,
+          "predicted": 0.6658283205105918
+        },
+        {
+          "date": "2022-05-31",
+          "actual": 0.0,
+          "predicted": 0.28361051863131365
+        },
+        {
+          "date": "2022-06-01",
+          "actual": 3.733333333333334,
+          "predicted": 10.824126027514508
+        },
+        {
+          "date": "2022-06-02",
+          "actual": 9.591666666666667,
+          "predicted": 10.975325842913717
+        },
+        {
+          "date": "2022-06-03",
+          "actual": 6.983333333333333,
+          "predicted": 9.468797605826667
+        },
+        {
+          "date": "2022-06-04",
+          "actual": 18.275000000000002,
+          "predicted": 12.162753614706924
+        },
+        {
+          "date": "2022-06-05",
+          "actual": 5.25,
+          "predicted": 8.722515557692317
+        },
+        {
+          "date": "2022-06-06",
+          "actual": 11.575000000000001,
+          "predicted": 11.23025525005039
+        },
+        {
+          "date": "2022-06-07",
+          "actual": 9.725,
+          "predicted": 11.51979977649721
+        },
+        {
+          "date": "2022-06-08",
+          "actual": 19.941666666666666,
+          "predicted": 10.174195348739696
+        },
+        {
+          "date": "2022-06-09",
+          "actual": 9.291666666666666,
+          "predicted": 13.639612282474891
+        },
+        {
+          "date": "2022-06-10",
+          "actual": 5.483333333333334,
+          "predicted": 9.026275363604244
+        },
+        {
+          "date": "2022-06-11",
+          "actual": 15.908333333333333,
+          "predicted": 9.169522885601657
+        },
+        {
+          "date": "2022-06-12",
+          "actual": 7.583333333333335,
+          "predicted": 10.51545612416236
+        },
+        {
+          "date": "2022-06-13",
+          "actual": 13.008333333333333,
+          "predicted": 7.100520235553596
+        },
+        {
+          "date": "2022-06-14",
+          "actual": 0.0,
+          "predicted": 8.433737422159902
+        },
+        {
+          "date": "2022-06-15",
+          "actual": 31.358333333333334,
+          "predicted": 9.611114429644504
+        },
+        {
+          "date": "2022-06-16",
+          "actual": 11.641666666666666,
+          "predicted": 11.307661881704782
+        },
+        {
+          "date": "2022-06-17",
+          "actual": 9.85,
+          "predicted": 9.316301289493866
+        },
+        {
+          "date": "2022-06-18",
+          "actual": 3.7000000000000006,
+          "predicted": 10.267812631114973
+        },
+        {
+          "date": "2022-06-19",
+          "actual": 15.058333333333335,
+          "predicted": 10.086773302670236
+        },
+        {
+          "date": "2022-06-20",
+          "actual": 19.224999999999998,
+          "predicted": 11.537455382685678
+        },
+        {
+          "date": "2022-06-21",
+          "actual": 11.316666666666668,
+          "predicted": 11.687657554428355
+        },
+        {
+          "date": "2022-06-22",
+          "actual": 9.841666666666667,
+          "predicted": 11.66716854988149
+        },
+        {
+          "date": "2022-06-23",
+          "actual": 5.7,
+          "predicted": 13.328836488724514
+        },
+        {
+          "date": "2022-06-24",
+          "actual": 8.716666666666667,
+          "predicted": 10.309384412093776
+        },
+        {
+          "date": "2022-06-25",
+          "actual": 10.65,
+          "predicted": 10.512664445688957
+        },
+        {
+          "date": "2022-06-26",
+          "actual": 6.5,
+          "predicted": 12.316166970769414
+        },
+        {
+          "date": "2022-06-27",
+          "actual": 11.608333333333334,
+          "predicted": 9.342295178772336
+        },
+        {
+          "date": "2022-06-28",
+          "actual": 12.75,
+          "predicted": 10.224478195402433
+        },
+        {
+          "date": "2022-06-29",
+          "actual": 11.5,
+          "predicted": 6.361310618634679
+        },
+        {
+          "date": "2022-06-30",
+          "actual": 17.316666666666666,
+          "predicted": 12.610559114390076
+        },
+        {
+          "date": "2022-07-01",
+          "actual": 27.925,
+          "predicted": 10.761595427941373
+        },
+        {
+          "date": "2022-07-02",
+          "actual": 10.899999999999999,
+          "predicted": 13.227927579403014
+        },
+        {
+          "date": "2022-07-03",
+          "actual": 9.891666666666667,
+          "predicted": 7.972326706666123
+        },
+        {
+          "date": "2022-07-04",
+          "actual": 6.608333333333333,
+          "predicted": 11.499377815152817
+        },
+        {
+          "date": "2022-07-05",
+          "actual": 12.141666666666666,
+          "predicted": 12.66016254678028
+        },
+        {
+          "date": "2022-07-06",
+          "actual": 2.6083333333333334,
+          "predicted": 11.070113811822102
+        },
+        {
+          "date": "2022-07-07",
+          "actual": 5.941666666666666,
+          "predicted": 7.900037130391006
+        },
+        {
+          "date": "2022-07-08",
+          "actual": 1.7749999999999997,
+          "predicted": 8.091736879896374
+        },
+        {
+          "date": "2022-07-09",
+          "actual": 11.616666666666667,
+          "predicted": 9.960126602089312
+        },
+        {
+          "date": "2022-07-10",
+          "actual": 12.050000000000002,
+          "predicted": 11.851674241037443
+        },
+        {
+          "date": "2022-07-11",
+          "actual": 6.45,
+          "predicted": 10.424160070890677
+        },
+        {
+          "date": "2022-07-12",
+          "actual": 8.7,
+          "predicted": 11.327083736308703
+        },
+        {
+          "date": "2022-07-13",
+          "actual": 14.641666666666666,
+          "predicted": 10.661052214874331
+        },
+        {
+          "date": "2022-07-14",
+          "actual": 5.891666666666667,
+          "predicted": 10.31446013119072
+        },
+        {
+          "date": "2022-07-15",
+          "actual": 3.483333333333333,
+          "predicted": 9.921389840602158
+        },
+        {
+          "date": "2022-07-16",
+          "actual": 7.708333333333333,
+          "predicted": 8.909318659895998
+        },
+        {
+          "date": "2022-07-17",
+          "actual": 10.325000000000001,
+          "predicted": 10.330971118697033
+        },
+        {
+          "date": "2022-07-18",
+          "actual": 15.800000000000002,
+          "predicted": 13.117750137864574
+        },
+        {
+          "date": "2022-07-19",
+          "actual": 7.816666666666666,
+          "predicted": 9.617639936627542
+        },
+        {
+          "date": "2022-07-20",
+          "actual": 4.2749999999999995,
+          "predicted": 8.241258274759526
+        },
+        {
+          "date": "2022-07-21",
+          "actual": 2.4,
+          "predicted": 11.604133713152478
+        },
+        {
+          "date": "2022-07-22",
+          "actual": 8.658333333333333,
+          "predicted": 9.008419953887008
+        },
+        {
+          "date": "2022-07-23",
+          "actual": 10.516666666666667,
+          "predicted": 9.071229387412417
+        },
+        {
+          "date": "2022-07-24",
+          "actual": 6.558333333333333,
+          "predicted": 7.400684096873099
+        },
+        {
+          "date": "2022-07-25",
+          "actual": 12.358333333333334,
+          "predicted": 9.07714186956317
+        },
+        {
+          "date": "2022-07-26",
+          "actual": 11.566666666666668,
+          "predicted": 9.864409740729675
+        },
+        {
+          "date": "2022-07-27",
+          "actual": 14.108333333333334,
+          "predicted": 13.983562000606346
+        },
+        {
+          "date": "2022-07-28",
+          "actual": 34.266666666666666,
+          "predicted": 11.612394282919134
+        },
+        {
+          "date": "2022-07-29",
+          "actual": 7.050000000000001,
+          "predicted": 10.53203306407311
+        },
+        {
+          "date": "2022-07-30",
+          "actual": 5.225,
+          "predicted": 9.70353213901614
+        },
+        {
+          "date": "2022-07-31",
+          "actual": 12.316666666666668,
+          "predicted": 9.290889275081453
+        },
+        {
+          "date": "2022-08-01",
+          "actual": 6.308333333333334,
+          "predicted": 7.078516656998598
+        },
+        {
+          "date": "2022-08-02",
+          "actual": 13.116666666666667,
+          "predicted": 12.928741502434557
+        },
+        {
+          "date": "2022-08-03",
+          "actual": 2.0833333333333335,
+          "predicted": 10.931430133434658
+        },
+        {
+          "date": "2022-08-04",
+          "actual": 8.4,
+          "predicted": 12.836948255128265
+        },
+        {
+          "date": "2022-08-05",
+          "actual": 18.458333333333332,
+          "predicted": 9.637386172943353
+        },
+        {
+          "date": "2022-08-06",
+          "actual": 3.758333333333333,
+          "predicted": 10.506777833120301
+        },
+        {
+          "date": "2022-08-07",
+          "actual": 10.566666666666668,
+          "predicted": 13.725751551497822
+        },
+        {
+          "date": "2022-08-08",
+          "actual": 4.7,
+          "predicted": 9.522271546985982
+        },
+        {
+          "date": "2022-08-09",
+          "actual": 15.0,
+          "predicted": 12.95128228004525
+        },
+        {
+          "date": "2022-08-10",
+          "actual": 32.8,
+          "predicted": 13.578058460571368
+        },
+        {
+          "date": "2022-08-11",
+          "actual": 8.366666666666667,
+          "predicted": 11.0261935928985
+        },
+        {
+          "date": "2022-08-12",
+          "actual": 4.6000000000000005,
+          "predicted": 8.367023918111135
+        },
+        {
+          "date": "2022-08-13",
+          "actual": 13.449999999999998,
+          "predicted": 10.662353203161226
+        },
+        {
+          "date": "2022-08-14",
+          "actual": 12.533333333333333,
+          "predicted": 11.525648934207261
+        },
+        {
+          "date": "2022-08-15",
+          "actual": 8.799999999999999,
+          "predicted": 9.434352962238249
+        },
+        {
+          "date": "2022-08-16",
+          "actual": 21.308333333333334,
+          "predicted": 11.19284336683505
+        },
+        {
+          "date": "2022-08-17",
+          "actual": 25.775000000000002,
+          "predicted": 10.184745166102202
+        },
+        {
+          "date": "2022-08-18",
+          "actual": 13.141666666666667,
+          "predicted": 7.947352303707958
+        },
+        {
+          "date": "2022-08-19",
+          "actual": 3.275,
+          "predicted": 7.92382715221632
+        },
+        {
+          "date": "2022-08-20",
+          "actual": 10.341666666666667,
+          "predicted": 8.559728856815184
+        },
+        {
+          "date": "2022-08-21",
+          "actual": 2.1999999999999997,
+          "predicted": 9.845652516760053
+        },
+        {
+          "date": "2022-08-22",
+          "actual": 19.25,
+          "predicted": 13.453541516556454
+        },
+        {
+          "date": "2022-08-23",
+          "actual": 3.483333333333333,
+          "predicted": 8.472102467171217
+        },
+        {
+          "date": "2022-08-24",
+          "actual": 17.25833333333333,
+          "predicted": 12.18724382879446
+        },
+        {
+          "date": "2022-08-25",
+          "actual": 3.6166666666666667,
+          "predicted": 9.20331947356771
+        },
+        {
+          "date": "2022-08-26",
+          "actual": 16.05,
+          "predicted": 9.498041575311133
+        },
+        {
+          "date": "2022-08-27",
+          "actual": 6.533333333333334,
+          "predicted": 11.923146132074107
+        },
+        {
+          "date": "2022-08-28",
+          "actual": 9.275,
+          "predicted": 10.705905165592684
+        },
+        {
+          "date": "2022-08-29",
+          "actual": 16.041666666666664,
+          "predicted": 8.950185417400329
+        },
+        {
+          "date": "2022-08-30",
+          "actual": 13.316666666666668,
+          "predicted": 9.741951288010556
+        },
+        {
+          "date": "2022-08-31",
+          "actual": 20.566666666666666,
+          "predicted": 11.315168236613735
+        },
+        {
+          "date": "2022-09-01",
+          "actual": 3.875,
+          "predicted": 10.863763171063752
+        },
+        {
+          "date": "2022-09-02",
+          "actual": 6.641666666666667,
+          "predicted": 10.752570464567297
+        },
+        {
+          "date": "2022-09-03",
+          "actual": 22.375,
+          "predicted": 12.212916092481288
+        },
+        {
+          "date": "2022-09-04",
+          "actual": 5.033333333333333,
+          "predicted": 10.12656649154092
+        },
+        {
+          "date": "2022-09-05",
+          "actual": 10.341666666666667,
+          "predicted": 12.975663806634481
+        },
+        {
+          "date": "2022-09-06",
+          "actual": 7.208333333333332,
+          "predicted": 12.344497737721786
+        },
+        {
+          "date": "2022-09-07",
+          "actual": 5.333333333333333,
+          "predicted": 13.487304735705578
+        },
+        {
+          "date": "2022-09-08",
+          "actual": 25.21666666666667,
+          "predicted": 13.088920823784884
+        },
+        {
+          "date": "2022-09-09",
+          "actual": 8.6,
+          "predicted": 11.371468552740048
+        },
+        {
+          "date": "2022-09-10",
+          "actual": 13.833333333333334,
+          "predicted": 11.758505627817264
+        },
+        {
+          "date": "2022-09-11",
+          "actual": 10.375,
+          "predicted": 12.369114478180649
+        },
+        {
+          "date": "2022-09-12",
+          "actual": 19.808333333333334,
+          "predicted": 10.107657842045688
+        },
+        {
+          "date": "2022-09-13",
+          "actual": 15.875,
+          "predicted": 14.415879043763596
+        },
+        {
+          "date": "2022-09-14",
+          "actual": 4.716666666666667,
+          "predicted": 8.484662784703609
+        },
+        {
+          "date": "2022-09-15",
+          "actual": 13.741666666666667,
+          "predicted": 11.326604374833437
+        },
+        {
+          "date": "2022-09-16",
+          "actual": 7.191666666666667,
+          "predicted": 9.925533751844535
+        },
+        {
+          "date": "2022-09-17",
+          "actual": 6.449999999999999,
+          "predicted": 10.2363017706699
+        },
+        {
+          "date": "2022-09-18",
+          "actual": 11.674999999999999,
+          "predicted": 10.017228004934683
+        },
+        {
+          "date": "2022-09-19",
+          "actual": 14.15,
+          "predicted": 12.929607563375896
+        },
+        {
+          "date": "2022-09-20",
+          "actual": 7.400000000000001,
+          "predicted": 9.092669069082119
+        },
+        {
+          "date": "2022-09-21",
+          "actual": 6.433333333333334,
+          "predicted": 7.880910169723229
+        },
+        {
+          "date": "2022-09-22",
+          "actual": 9.966666666666667,
+          "predicted": 10.224989128729252
+        },
+        {
+          "date": "2022-09-23",
+          "actual": 9.016666666666667,
+          "predicted": 8.630893962085796
+        },
+        {
+          "date": "2022-09-24",
+          "actual": 12.074999999999998,
+          "predicted": 8.901539938189405
+        },
+        {
+          "date": "2022-09-25",
+          "actual": 24.733333333333334,
+          "predicted": 11.162754028148363
+        },
+        {
+          "date": "2022-09-26",
+          "actual": 16.0,
+          "predicted": 12.039109952552158
+        },
+        {
+          "date": "2022-09-27",
+          "actual": 15.291666666666666,
+          "predicted": 10.940326446544573
+        },
+        {
+          "date": "2022-09-28",
+          "actual": 13.833333333333334,
+          "predicted": 13.640835024798967
+        },
+        {
+          "date": "2022-09-29",
+          "actual": 22.3,
+          "predicted": 10.388586809141218
+        },
+        {
+          "date": "2022-09-30",
+          "actual": 12.066666666666665,
+          "predicted": 12.09047191989311
+        },
+        {
+          "date": "2022-10-01",
+          "actual": 0.0,
+          "predicted": 0.30891764041246367
+        },
+        {
+          "date": "2022-10-02",
+          "actual": 0.0,
+          "predicted": 1.0708513534907984
+        },
+        {
+          "date": "2022-10-03",
+          "actual": 5.2,
+          "predicted": 0.5546187060366701
+        },
+        {
+          "date": "2022-10-04",
+          "actual": 0.18333333333333335,
+          "predicted": 0.7794888728170081
+        },
+        {
+          "date": "2022-10-05",
+          "actual": 2.525,
+          "predicted": 0.5657679581351734
+        },
+        {
+          "date": "2022-10-06",
+          "actual": 0.0,
+          "predicted": 0.9003369079275468
+        },
+        {
+          "date": "2022-10-07",
+          "actual": 0.31666666666666665,
+          "predicted": 0.6870708535956674
+        },
+        {
+          "date": "2022-10-08",
+          "actual": 0.625,
+          "predicted": 0.6064622074935907
+        },
+        {
+          "date": "2022-10-09",
+          "actual": 4.366666666666666,
+          "predicted": 0.8590793259843852
+        },
+        {
+          "date": "2022-10-10",
+          "actual": 0.5416666666666666,
+          "predicted": 0.4292007772112574
+        },
+        {
+          "date": "2022-10-11",
+          "actual": 0.35833333333333334,
+          "predicted": 0.503533112314796
+        },
+        {
+          "date": "2022-10-12",
+          "actual": 0.0,
+          "predicted": 0.40161983944029056
+        },
+        {
+          "date": "2022-10-13",
+          "actual": 6.708333333333333,
+          "predicted": 0.6212262121440686
+        },
+        {
+          "date": "2022-10-14",
+          "actual": 0.25,
+          "predicted": 0.6359308119030217
+        },
+        {
+          "date": "2022-10-15",
+          "actual": 0.0,
+          "predicted": 0.41118867763997735
+        },
+        {
+          "date": "2022-10-16",
+          "actual": 0.0,
+          "predicted": 0.5325961575308424
+        },
+        {
+          "date": "2022-10-17",
+          "actual": 0.0,
+          "predicted": 1.5715406724676126
+        },
+        {
+          "date": "2022-10-18",
+          "actual": 0.3833333333333333,
+          "predicted": 1.029960591872111
+        },
+        {
+          "date": "2022-10-19",
+          "actual": 0.7166666666666667,
+          "predicted": 0.6695860034289424
+        },
+        {
+          "date": "2022-10-20",
+          "actual": 0.0,
+          "predicted": 1.1643888628550696
+        },
+        {
+          "date": "2022-10-21",
+          "actual": 0.0,
+          "predicted": 0.6546357075833896
+        },
+        {
+          "date": "2022-10-22",
+          "actual": 0.0,
+          "predicted": 0.4256918976838832
+        },
+        {
+          "date": "2022-10-23",
+          "actual": 0.0,
+          "predicted": 1.1761326880449197
+        },
+        {
+          "date": "2022-10-24",
+          "actual": 0.0,
+          "predicted": 0.5402162296260937
+        },
+        {
+          "date": "2022-10-25",
+          "actual": 4.583333333333333,
+          "predicted": 2.0531672547276787
+        },
+        {
+          "date": "2022-10-26",
+          "actual": 0.2333333333333333,
+          "predicted": 0.47602521215751886
+        },
+        {
+          "date": "2022-10-27",
+          "actual": 0.0,
+          "predicted": 0.608183319585471
+        },
+        {
+          "date": "2022-10-28",
+          "actual": 0.0,
+          "predicted": 1.3893602971205494
+        },
+        {
+          "date": "2022-10-29",
+          "actual": 0.9166666666666666,
+          "predicted": 0.4836073457911276
+        },
+        {
+          "date": "2022-10-30",
+          "actual": 0.44166666666666665,
+          "predicted": 0.6286702873718925
+        },
+        {
+          "date": "2022-10-31",
+          "actual": 0.0,
+          "predicted": 0.5824304411053678
+        },
+        {
+          "date": "2022-11-01",
+          "actual": 0.0,
+          "predicted": 1.4240007118141615
+        },
+        {
+          "date": "2022-11-02",
+          "actual": 0.0,
+          "predicted": 0.8608674088750115
+        },
+        {
+          "date": "2022-11-03",
+          "actual": 0.35833333333333334,
+          "predicted": 0.7017591314389203
+        },
+        {
+          "date": "2022-11-04",
+          "actual": 0.525,
+          "predicted": 1.8070770279133752
+        },
+        {
+          "date": "2022-11-05",
+          "actual": 0.0,
+          "predicted": 0.3794962526372488
+        },
+        {
+          "date": "2022-11-06",
+          "actual": 0.0,
+          "predicted": 0.9099541980221212
+        },
+        {
+          "date": "2022-11-07",
+          "actual": 0.0,
+          "predicted": 0.31808618638109426
+        },
+        {
+          "date": "2022-11-08",
+          "actual": 7.508333333333333,
+          "predicted": 0.5692280777537436
+        },
+        {
+          "date": "2022-11-09",
+          "actual": 0.0,
+          "predicted": 1.4223913224905786
+        },
+        {
+          "date": "2022-11-10",
+          "actual": 0.0,
+          "predicted": 1.2907633953988435
+        },
+        {
+          "date": "2022-11-11",
+          "actual": 0.4583333333333333,
+          "predicted": 1.131111031786565
+        },
+        {
+          "date": "2022-11-12",
+          "actual": 0.14166666666666666,
+          "predicted": 0.4120551932691998
+        },
+        {
+          "date": "2022-11-13",
+          "actual": 0.0,
+          "predicted": 1.0614693445638945
+        },
+        {
+          "date": "2022-11-14",
+          "actual": 0.0,
+          "predicted": 0.6363217132316757
+        },
+        {
+          "date": "2022-11-15",
+          "actual": 0.0,
+          "predicted": 1.108774542493512
+        },
+        {
+          "date": "2022-11-16",
+          "actual": 0.0,
+          "predicted": 0.4634922624950475
+        },
+        {
+          "date": "2022-11-17",
+          "actual": 0.0,
+          "predicted": 1.050963604135351
+        },
+        {
+          "date": "2022-11-18",
+          "actual": 1.3499999999999999,
+          "predicted": 0.5572549571769484
+        },
+        {
+          "date": "2022-11-19",
+          "actual": 1.05,
+          "predicted": 1.3336722511963937
+        },
+        {
+          "date": "2022-11-20",
+          "actual": 0.0,
+          "predicted": 0.953551463093156
+        },
+        {
+          "date": "2022-11-21",
+          "actual": 3.25,
+          "predicted": 1.1189326693391903
+        },
+        {
+          "date": "2022-11-22",
+          "actual": 0.8833333333333333,
+          "predicted": 0.6350743835124518
+        },
+        {
+          "date": "2022-11-23",
+          "actual": 0.0,
+          "predicted": 0.3817080185865795
+        },
+        {
+          "date": "2022-11-24",
+          "actual": 0.18333333333333335,
+          "predicted": 0.6911909266197293
+        },
+        {
+          "date": "2022-11-25",
+          "actual": 0.0,
+          "predicted": 0.4247526158157735
+        },
+        {
+          "date": "2022-11-26",
+          "actual": 0.7999999999999999,
+          "predicted": 0.48084205850674394
+        },
+        {
+          "date": "2022-11-27",
+          "actual": 1.0333333333333334,
+          "predicted": 1.0501131833117394
+        },
+        {
+          "date": "2022-11-28",
+          "actual": 0.0,
+          "predicted": 0.5161157221986478
+        },
+        {
+          "date": "2022-11-29",
+          "actual": 0.0,
+          "predicted": 0.4591727567468839
+        },
+        {
+          "date": "2022-11-30",
+          "actual": 0.0,
+          "predicted": 1.1867413570865357
+        },
+        {
+          "date": "2022-12-01",
+          "actual": 0.0,
+          "predicted": 0.2542215546313442
+        },
+        {
+          "date": "2022-12-02",
+          "actual": 0.0,
+          "predicted": 0.19936494637295077
+        },
+        {
+          "date": "2022-12-03",
+          "actual": 0.0,
+          "predicted": 0.20863609287096627
+        },
+        {
+          "date": "2022-12-04",
+          "actual": 0.0,
+          "predicted": 0.15853805495111795
+        },
+        {
+          "date": "2022-12-05",
+          "actual": 0.0,
+          "predicted": 0.45721047507629636
+        },
+        {
+          "date": "2022-12-06",
+          "actual": 0.0,
+          "predicted": 0.19710850490690457
+        },
+        {
+          "date": "2022-12-07",
+          "actual": 0.0,
+          "predicted": 0.20046862297576343
+        },
+        {
+          "date": "2022-12-08",
+          "actual": 0.0,
+          "predicted": 0.2335581639225329
+        },
+        {
+          "date": "2022-12-09",
+          "actual": 0.0,
+          "predicted": 0.35638566531182575
+        },
+        {
+          "date": "2022-12-10",
+          "actual": 0.0,
+          "predicted": 0.29804213107592953
+        },
+        {
+          "date": "2022-12-11",
+          "actual": 0.0,
+          "predicted": 0.28446382297341755
+        },
+        {
+          "date": "2022-12-12",
+          "actual": 0.7999999999999999,
+          "predicted": 0.2326111106625849
+        },
+        {
+          "date": "2022-12-13",
+          "actual": 0.0,
+          "predicted": 0.23252912536412465
+        },
+        {
+          "date": "2022-12-14",
+          "actual": 3.7416666666666667,
+          "predicted": 0.31028649678070636
+        },
+        {
+          "date": "2022-12-15",
+          "actual": 0.0,
+          "predicted": 0.18090570434635186
+        },
+        {
+          "date": "2022-12-16",
+          "actual": 0.0,
+          "predicted": 0.30385635517016624
+        },
+        {
+          "date": "2022-12-17",
+          "actual": 0.6166666666666667,
+          "predicted": 0.22760800080008012
+        },
+        {
+          "date": "2022-12-18",
+          "actual": 0.0,
+          "predicted": 0.27324159079447136
+        },
+        {
+          "date": "2022-12-19",
+          "actual": 0.39166666666666666,
+          "predicted": 0.2876981896618496
+        },
+        {
+          "date": "2022-12-20",
+          "actual": 0.0,
+          "predicted": 1.212670443601853
+        },
+        {
+          "date": "2022-12-21",
+          "actual": 0.0,
+          "predicted": 0.19260234061423034
+        },
+        {
+          "date": "2022-12-22",
+          "actual": 0.6333333333333333,
+          "predicted": 0.27157119930256285
+        },
+        {
+          "date": "2022-12-23",
+          "actual": 0.0,
+          "predicted": 0.20130020514318644
+        },
+        {
+          "date": "2022-12-24",
+          "actual": 0.0,
+          "predicted": 0.33317718478519054
+        },
+        {
+          "date": "2022-12-25",
+          "actual": 0.0,
+          "predicted": 0.3876156672267815
+        },
+        {
+          "date": "2022-12-26",
+          "actual": 0.0,
+          "predicted": 0.23923723531552255
+        },
+        {
+          "date": "2022-12-27",
+          "actual": 0.0,
+          "predicted": 0.20496719368296282
+        },
+        {
+          "date": "2022-12-28",
+          "actual": 0.0,
+          "predicted": 0.23556191214158181
+        },
+        {
+          "date": "2022-12-29",
+          "actual": 0.0,
+          "predicted": 0.7679680029204691
+        },
+        {
+          "date": "2022-12-30",
+          "actual": 0.0,
+          "predicted": 0.1696209376226516
+        },
+        {
+          "date": "2022-12-31",
+          "actual": 0.0,
+          "predicted": 0.18259991549148116
+        }
+      ]
+    }
+  },
+  "demo_data": true
+}

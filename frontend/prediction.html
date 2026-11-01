@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rainfall Prediction · Rainfall Prediction Using ML</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body data-page="prediction" data-title="Rainfall Prediction">
+<main class="content" id="page-content">
+<div class="page-head"><h1>Location-Aware Rainfall Prediction</h1>
+<p class="muted">Choose a supported location, enter weather parameters, and the trained model predicts rainfall.</p></div>
+<div id="pred-error"></div>
+<div class="grid g2">
+  <div class="card">
+    <h2>1 · Select location</h2>
+    <div class="field"><label for="loc-search">Search location</label><input id="loc-search" type="search" placeholder="Type to filter…" autocomplete="off"></div>
+    <div class="loc-list" id="loc-list"><div class="loader"></div></div>
+    <p class="muted" id="loc-selected-label" style="margin-top:.6rem">No location selected.</p>
+    <div id="loc-weather"></div>
+  </div>
+  <div class="card"><h2>Map</h2><div id="map" class="map"></div><p class="muted">Click a marker to select that location.</p></div>
+</div>
+<div class="card" style="margin-top:1.1rem">
+  <h2>2 · Weather parameters</h2>
+  <form id="predict-form" novalidate>
+    <div class="grid g3" id="form-fields"><div class="loader"></div></div>
+    <div style="margin-top:.8rem;display:flex;gap:.6rem;flex-wrap:wrap">
+      <button class="btn" type="submit" id="submit-btn">Predict rainfall</button>
+      <button class="btn ghost" type="button" id="fill-avg">Fill with location's typical values</button>
+      <button class="btn ghost" type="reset" id="reset-btn">Clear</button>
+    </div>
+  </form>
+</div>
+<div id="result" style="margin-top:1.1rem"></div>
+</main>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/prediction.js"></script>
+</body></html>

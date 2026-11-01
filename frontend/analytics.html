@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Model Analytics · Rainfall Prediction Using ML</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/responsive.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body data-page="analytics" data-title="Model Analytics">
+<main class="content" id="page-content">
+<div class="page-head"><h1>Intelligent Ensemble Learning</h1><p class="muted">Baseline, Random Forest, Gradient Boosting and Voting Ensemble compared on the same held-out test set.</p></div>
+<div id="an-error"></div>
+<div class="card"><h2>Model comparison</h2><div id="model-table"><div class="loader"></div></div><p class="muted" id="model-note"></p></div>
+<div class="grid g2" style="margin-top:1.1rem">
+  <div class="card"><h2>Error metrics (lower is better)</h2><div class="chart-box"><canvas id="chart-models"></canvas></div></div>
+  <div class="card"><h2>R² score (higher is better)</h2><div class="chart-box"><canvas id="chart-r2"></canvas></div></div>
+</div>
+<div class="grid g2" style="margin-top:1.1rem">
+  <div class="card"><h2>Feature importance</h2><div class="chart-box tall"><canvas id="chart-importance"></canvas></div><p class="muted" id="imp-method"></p></div>
+  <div class="card"><h2>Actual vs predicted rainfall</h2><div class="chart-box tall"><canvas id="chart-avp"></canvas></div><p class="muted" id="avp-note"></p></div>
+</div>
+<div class="grid g2" style="margin-top:1.1rem">
+  <div class="card"><h2>Heavy-rainfall classifier</h2><div id="risk-metrics"></div></div>
+  <div class="card"><h2>Location experiments</h2><div id="geo-box"></div></div>
+</div>
+</main>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/analytics.js"></script>
+</body></html>

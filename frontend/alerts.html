@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Early Warning · Rainfall Prediction Using ML</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/responsive.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body data-page="alerts" data-title="Early Warning">
+<main class="content" id="page-content">
+<div class="page-head"><h1>Extreme Rainfall Early Warning</h1>
+<p class="muted">Heavy-rainfall early warning based on the trained classifier and rainfall thresholds.</p></div>
+<div id="al-error"></div>
+<div class="banner info"><strong>Note:</strong> this is a heavy-rainfall warning, not a flood prediction. Flood risk is shown only when the backend has validated flood data (<span id="flood-state">checking…</span>).</div>
+<div class="grid g2">
+  <div class="card risk-panel none" id="status-card"><h2>Latest prediction status</h2><div id="status-body"></div></div>
+  <div class="card"><h2>Risk levels</h2><div id="legend"><div class="loader"></div></div></div>
+</div>
+<div class="card" style="margin-top:1.1rem"><h2>Recommended precautions</h2><div id="precautions"></div></div>
+<div class="card" style="margin-top:1.1rem"><h2>Warning history</h2><div id="history"><div class="loader"></div></div></div>
+</main>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/alerts.js"></script>
+</body></html>

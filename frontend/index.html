@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rainfall Prediction Using ML</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"></head>
+<body><section class="hero"><div>
+<div style="font-size:3rem">☔</div>
+<h1>Rainfall Prediction Using ML</h1>
+<p>Location-aware rainfall prediction with intelligent ensemble learning and a heavy-rainfall early-warning system.</p>
+<a class="btn cyan" href="dashboard.html">Open Dashboard</a>
+<p style="margin-top:1.4rem"><span class="status" id="api-status">Checking API…</span></p>
+</div></section>
+<script src="js/api.js"></script>
+<script>
+Api.health().then(h => { const e=document.getElementById("api-status"); e.className="status "+(h.models_loaded?"online":"degraded"); e.textContent=h.models_loaded?"Backend connected · models loaded":"Backend up · models not trained yet"; })
+.catch(() => { const e=document.getElementById("api-status"); e.className="status offline"; e.textContent="Backend offline"; });
+</script></body></html>

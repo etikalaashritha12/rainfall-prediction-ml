@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Project · Rainfall Prediction Using ML</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body data-page="about" data-title="About Project">
+<main class="content" id="page-content">
+<div class="page-head"><h1>About the Project</h1><p class="muted">Rainfall Prediction Using ML · AIML course-based project</p></div>
+<div class="grid g3">
+  <div class="card"><h2>1 · Intelligent Ensemble Learning</h2><p>Linear Regression (baseline), Random Forest, Gradient Boosting and a Voting Ensemble are trained on the same chronological split and compared using MAE, RMSE and R². The best model is chosen from validation results, not assumed.</p></div>
+  <div class="card"><h2>2 · Location-Aware Prediction</h2><p>The location is a model input. Only locations present in the training data are supported, and latitude/longitude are used only if experiments show they help.</p></div>
+  <div class="card"><h2>3 · Heavy-Rainfall Early Warning</h2><p>A class-imbalance-aware classifier flags likely heavy-rainfall events. It does not predict floods: no soil, river, terrain or flood-record data is used.</p></div>
+</div>
+<div class="card" style="margin-top:1.1rem"><h2>Architecture</h2>
+<p>Browser (HTML/CSS/JS, Chart.js, Leaflet) → <code>fetch()</code> → Flask REST API → saved scikit-learn models (Joblib) + metadata.json. Models are trained once offline and only loaded by the API.</p>
+<ul class="plain-list"><li>Frontend: vanilla JavaScript, no framework</li><li>Backend: Flask, pandas, NumPy, scikit-learn, SQLite for alert history</li><li>Explainability: permutation importance</li></ul></div>
+<div class="card" style="margin-top:1.1rem"><h2>Limitations</h2><ul class="plain-list"><li>Predictions are only as good as the dataset the models were trained on.</li><li>Typical-value autofill uses historical averages, not live weather.</li><li>This is an academic demonstration, not an official forecasting service.</li></ul></div>
+</main>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body></html>

@@ -1,0 +1,18 @@
+/* KPI cards, maps, risk panels */
+.kpi{display:flex;flex-direction:column;gap:.15rem}
+.kpi .label{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+.kpi .value{font-size:1.55rem;font-weight:700;color:var(--navy-900);overflow-wrap:anywhere}
+.kpi .sub{font-size:.82rem;color:var(--muted)}
+.kpi .icon{width:36px;height:36px;border-radius:10px;background:var(--cyan-soft);display:grid;place-items:center;margin-bottom:.4rem}
+.map{height:340px;border-radius:12px;border:1px solid var(--border);z-index:1}
+.result-hero{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+.result-hero .big{font-size:2.6rem;font-weight:800;color:var(--navy-900)}
+.risk-panel{border-left:6px solid var(--border)} .risk-panel.normal{border-color:var(--ok)} .risk-panel.moderate{border-color:var(--warn)} .risk-panel.high{border-color:var(--danger)}
+.legend{display:flex;gap:.6rem;flex-wrap:wrap}
+.plain-list{padding-left:1.1rem;margin:.3rem 0} .plain-list li{margin-bottom:.3rem}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:.25rem 1rem;font-size:.9rem} .kv dt{color:var(--muted)} .kv dd{margin:0;font-weight:600}
+.loc-list{max-height:220px;overflow:auto;border:1px solid var(--border);border-radius:10px}
+.loc-list button{display:block;width:100%;text-align:left;border:0;background:#fff;padding:.5rem .8rem;cursor:pointer;border-bottom:1px solid var(--border);font:inherit}
+.loc-list button:hover,.loc-list button.sel{background:var(--cyan-soft)}
+.pill-row{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.4rem}
+.hidden{display:none!important}

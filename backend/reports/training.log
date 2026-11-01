@@ -1,0 +1,15 @@
+2026-11-01 20:58:12,679 INFO Loaded 35064 clean rows (35064 raw, 0 duplicates)
+2026-11-01 20:58:12,683 INFO Split sizes train/val/test = 24544/5260/5260
+2026-11-01 20:58:19,007 INFO Geo experiment: RMSE without=13.569 with=13.565 -> use_geo=False
+2026-11-01 20:58:19,023 INFO Features used: ['temperature', 'humidity', 'pressure', 'wind_speed', 'cloud_cover', 'month', 'month_sin', 'month_cos', 'location']
+2026-11-01 20:58:19,023 INFO Training Linear Regression (Baseline) ...
+2026-11-01 20:58:19,107 INFO Linear Regression (Baseline) -> val RMSE 13.772 | test {'mae': 5.0808413097333185, 'rmse': 11.762612319517967, 'r2': 0.21151503123412607}
+2026-11-01 20:58:19,107 INFO Training Random Forest ...
+2026-11-01 20:58:37,020 INFO Random Forest -> val RMSE 13.585 | test {'mae': 4.053635337008524, 'rmse': 11.543317715625829, 'r2': 0.2406409903318133}
+2026-11-01 20:58:37,026 INFO Training Gradient Boosting ...
+2026-11-01 20:58:57,611 INFO Gradient Boosting -> val RMSE 13.109 | test {'mae': 3.8361978381425246, 'rmse': 11.195236664778871, 'r2': 0.28574644695252427}
+2026-11-01 20:58:57,612 INFO Training Voting Ensemble (RF + GB) ...
+2026-11-01 20:59:11,936 INFO Voting Ensemble (RF + GB) -> val RMSE 13.246 | test {'mae': 3.9260979103171447, 'rmse': 11.278407876800008, 'r2': 0.27509441674228996}
+2026-11-01 20:59:11,936 INFO Best model: Gradient Boosting (ensemble is best: False)
+2026-11-01 20:59:23,759 INFO Heavy-rain events (train/val/test): {'train': 310, 'val': 78, 'test': 56}
+2026-11-01 20:59:24,831 INFO Training complete. Artifacts saved to C:\Users\Ashritha\OneDrive\Desktop\ai\rainfall-project\backend\saved_models

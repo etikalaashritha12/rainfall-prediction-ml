@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Location Explorer · Rainfall Prediction Using ML</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body data-page="locations" data-title="Location Explorer">
+<main class="content" id="page-content">
+<div class="page-head"><h1>Location Explorer</h1><p class="muted">Every location the model was trained on. Unsupported places are intentionally not available.</p></div>
+<div id="loc-error"></div>
+<div class="grid g2">
+  <div class="card"><div class="field"><label for="loc-q">Search</label><input id="loc-q" type="search" placeholder="Search locations…"></div>
+    <div style="max-height:420px;overflow:auto"><table><thead><tr><th>Location</th><th>State</th><th>Records</th><th></th></tr></thead><tbody id="loc-body"><tr><td colspan="4"><div class="loader"></div></td></tr></tbody></table></div></div>
+  <div class="card"><h2>Map</h2><div id="map" class="map" style="height:450px"></div></div>
+</div>
+</main>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/locations.js"></script>
+</body></html>
